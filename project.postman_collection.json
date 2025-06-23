@@ -36,11 +36,6 @@
 							"type": "text"
 						},
 						{
-							"key": "phone_number",
-							"value": "0969067441",
-							"type": "text"
-						},
-						{
 							"key": "password",
 							"value": "12345678",
 							"type": "text"
@@ -60,184 +55,6 @@
 				}
 			},
 			"response": [
-				{
-					"name": "phone number unique",
-					"originalRequest": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "first_name",
-									"value": "mohamad",
-									"type": "text"
-								},
-								{
-									"key": "last_name",
-									"value": "aldebs",
-									"type": "text"
-								},
-								{
-									"key": "email",
-									"value": "mohamadd@gmail.com",
-									"type": "text"
-								},
-								{
-									"key": "phone_number",
-									"value": "0969067449",
-									"type": "text"
-								},
-								{
-									"key": "password",
-									"value": "12345678",
-									"type": "text"
-								}
-							]
-						},
-						"url": {
-							"raw": "localhost:8000/api/register",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"api",
-								"register"
-							]
-						}
-					},
-					"status": "Unprocessable Content",
-					"code": 422,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Host",
-							"value": "localhost:8000"
-						},
-						{
-							"key": "Connection",
-							"value": "close"
-						},
-						{
-							"key": "X-Powered-By",
-							"value": "PHP/8.2.12"
-						},
-						{
-							"key": "Cache-Control",
-							"value": "no-cache, private"
-						},
-						{
-							"key": "Date",
-							"value": "Sat, 14 Jun 2025 10:40:52 GMT"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Access-Control-Allow-Origin",
-							"value": "*"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"message\": \"The phone number has already been taken.\",\n    \"errors\": {\n        \"phone_number\": [\n            \"The phone number has already been taken.\"\n        ]\n    }\n}"
-				},
-				{
-					"name": "email unique",
-					"originalRequest": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "first_name",
-									"value": "mohamad",
-									"type": "text"
-								},
-								{
-									"key": "last_name",
-									"value": "aldebs",
-									"type": "text"
-								},
-								{
-									"key": "email",
-									"value": "mohamad@gmail.com",
-									"type": "text"
-								},
-								{
-									"key": "phone_number",
-									"value": "0969067441",
-									"type": "text"
-								},
-								{
-									"key": "password",
-									"value": "12345678",
-									"type": "text"
-								}
-							]
-						},
-						"url": {
-							"raw": "localhost:8000/api/register",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"api",
-								"register"
-							]
-						}
-					},
-					"status": "Unprocessable Content",
-					"code": 422,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Host",
-							"value": "localhost:8000"
-						},
-						{
-							"key": "Connection",
-							"value": "close"
-						},
-						{
-							"key": "X-Powered-By",
-							"value": "PHP/8.2.12"
-						},
-						{
-							"key": "Cache-Control",
-							"value": "no-cache, private"
-						},
-						{
-							"key": "Date",
-							"value": "Sat, 14 Jun 2025 10:41:31 GMT"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Access-Control-Allow-Origin",
-							"value": "*"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"message\": \"The email has already been taken.\",\n    \"errors\": {\n        \"email\": [\n            \"The email has already been taken.\"\n        ]\n    }\n}"
-				},
 				{
 					"name": "success",
 					"originalRequest": {
@@ -265,11 +82,6 @@
 								{
 									"key": "email",
 									"value": "mmmsyrm@gmail.com",
-									"type": "text"
-								},
-								{
-									"key": "phone_number",
-									"value": "0969067441",
 									"type": "text"
 								},
 								{
@@ -313,7 +125,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 15 Jun 2025 18:01:05 GMT"
+							"value": "Mon, 23 Jun 2025 19:48:23 GMT"
 						},
 						{
 							"key": "Content-Type",
@@ -325,7 +137,91 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"status\": 1,\n    \"data\": {\n        \"user\": {\n            \"first_name\": \"mohamad\",\n            \"last_name\": \"aldebs\",\n            \"email\": \"mmmsyrm@gmail.com\",\n            \"phone_number\": \"0969067441\",\n            \"updated_at\": \"2025-06-15T18:01:02.000000Z\",\n            \"created_at\": \"2025-06-15T18:01:02.000000Z\",\n            \"id\": 1\n        },\n        \"token\": \"1|FI4sPlRukRpgtFUgnGtFO2Kf0MIFNXHo0quiHeso5fe00878\"\n    },\n    \"message\": \"User registered successfully, please check your email.\"\n}"
+					"body": "{\n    \"status\": 1,\n    \"data\": {\n        \"user\": {\n            \"first_name\": \"mohamad\",\n            \"last_name\": \"aldebs\",\n            \"email\": \"mmmsyrm@gmail.com\",\n            \"updated_at\": \"2025-06-23T19:48:19.000000Z\",\n            \"created_at\": \"2025-06-23T19:48:19.000000Z\",\n            \"id\": 1\n        },\n        \"token\": \"1|EHlCzpABHz0889sjdaOFvsMkX7hbj6HrSXjx1EmU115c80f1\"\n    },\n    \"message\": \"User registered successfully, please check your email.\"\n}"
+				},
+				{
+					"name": "The email has already been taken",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "mohamad",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "aldebs",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "mmmsyrm@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/register",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"status": "Unprocessable Content",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Jun 2025 19:51:48 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"The email has already been taken.\",\n    \"errors\": {\n        \"email\": [\n            \"The email has already been taken.\"\n        ]\n    }\n}"
 				}
 			]
 		},
@@ -347,8 +243,8 @@
 					"mode": "formdata",
 					"formdata": [
 						{
-							"key": "login",
-							"value": "0969067449",
+							"key": "email",
+							"value": "mmmsyrm@gmail.com",
 							"type": "text"
 						},
 						{
@@ -372,7 +268,7 @@
 			},
 			"response": [
 				{
-					"name": "success,email",
+					"name": "success",
 					"originalRequest": {
 						"method": "POST",
 						"header": [
@@ -386,8 +282,8 @@
 							"mode": "formdata",
 							"formdata": [
 								{
-									"key": "login",
-									"value": "mohamad@gmail.com",
+									"key": "email",
+									"value": "mmmsyrm@gmail.com",
 									"type": "text"
 								},
 								{
@@ -431,7 +327,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 15 Jun 2025 10:01:25 GMT"
+							"value": "Mon, 23 Jun 2025 19:53:26 GMT"
 						},
 						{
 							"key": "Content-Type",
@@ -443,10 +339,10 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"status\": 1,\n    \"data\": {\n        \"user\": {\n            \"id\": 1,\n            \"first_name\": \"mohamad\",\n            \"last_name\": \"aldebs\",\n            \"email\": \"mohamad@gmail.com\",\n            \"email_verified_at\": null,\n            \"phone_number\": \"0969067449\",\n            \"created_at\": \"2025-06-15T10:01:09.000000Z\",\n            \"updated_at\": \"2025-06-15T10:01:09.000000Z\"\n        },\n        \"token\": \"2|f6dUZUXezC7qyrpIUrLq3e2f6h7x4FlFeXGg8Fn9673c5e49\"\n    },\n    \"message\": \"User logged in successfully\"\n}"
+					"body": "{\n    \"status\": 1,\n    \"data\": {\n        \"user\": {\n            \"id\": 1,\n            \"first_name\": \"mohamad\",\n            \"last_name\": \"aldebs\",\n            \"email\": \"mmmsyrm@gmail.com\",\n            \"email_verified_at\": \"2025-06-23T19:49:54.000000Z\",\n            \"role\": \"user\",\n            \"created_at\": \"2025-06-23T19:48:19.000000Z\",\n            \"updated_at\": \"2025-06-23T19:49:54.000000Z\"\n        },\n        \"token\": \"2|ORBUfRug9PRQn9WvhUcwAbi00kyreQ3thAPGcDscec170c19\"\n    },\n    \"message\": \"user logged in successfully\"\n}"
 				},
 				{
-					"name": "success,phone",
+					"name": "The selected email is invalid",
 					"originalRequest": {
 						"method": "POST",
 						"header": [
@@ -460,8 +356,8 @@
 							"mode": "formdata",
 							"formdata": [
 								{
-									"key": "login",
-									"value": "0969067449",
+									"key": "email",
+									"value": "mmmsyrmm@gmail.com",
 									"type": "text"
 								},
 								{
@@ -483,8 +379,8 @@
 							]
 						}
 					},
-					"status": "OK",
-					"code": 200,
+					"status": "Unprocessable Content",
+					"code": 422,
 					"_postman_previewlanguage": "json",
 					"header": [
 						{
@@ -505,7 +401,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 15 Jun 2025 10:09:24 GMT"
+							"value": "Mon, 23 Jun 2025 19:54:01 GMT"
 						},
 						{
 							"key": "Content-Type",
@@ -517,10 +413,10 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"status\": 1,\n    \"data\": {\n        \"user\": {\n            \"id\": 1,\n            \"first_name\": \"mohamad\",\n            \"last_name\": \"aldebs\",\n            \"email\": \"mohamad@gmail.com\",\n            \"email_verified_at\": null,\n            \"phone_number\": \"0969067449\",\n            \"created_at\": \"2025-06-15T10:01:09.000000Z\",\n            \"updated_at\": \"2025-06-15T10:01:09.000000Z\"\n        },\n        \"token\": \"3|Pi7ENDbZTjuY0k7cII10bKkb7N6ETyZtiij1wjx89739fd7c\"\n    },\n    \"message\": \"User logged in successfully\"\n}"
+					"body": "{\n    \"message\": \"The selected email is invalid.\",\n    \"errors\": {\n        \"email\": [\n            \"The selected email is invalid.\"\n        ]\n    }\n}"
 				},
 				{
-					"name": "User not found",
+					"name": "Incorrect password",
 					"originalRequest": {
 						"method": "POST",
 						"header": [
@@ -534,82 +430,8 @@
 							"mode": "formdata",
 							"formdata": [
 								{
-									"key": "login",
-									"value": "0969067445",
-									"type": "text"
-								},
-								{
-									"key": "password",
-									"value": "12345678",
-									"type": "text"
-								}
-							]
-						},
-						"url": {
-							"raw": "localhost:8000/api/login",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"api",
-								"login"
-							]
-						}
-					},
-					"status": "Not Found",
-					"code": 404,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Host",
-							"value": "localhost:8000"
-						},
-						{
-							"key": "Connection",
-							"value": "close"
-						},
-						{
-							"key": "X-Powered-By",
-							"value": "PHP/8.2.12"
-						},
-						{
-							"key": "Cache-Control",
-							"value": "no-cache, private"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 15 Jun 2025 10:10:00 GMT"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Access-Control-Allow-Origin",
-							"value": "*"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"status\": 0,\n    \"data\": [],\n    \"message\": \"User not found\"\n}"
-				},
-				{
-					"name": "Incorrect passsword",
-					"originalRequest": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "login",
-									"value": "0969067449",
+									"key": "email",
+									"value": "mmmsyrm@gmail.com",
 									"type": "text"
 								},
 								{
@@ -631,8 +453,8 @@
 							]
 						}
 					},
-					"status": "Unauthorized",
-					"code": 401,
+					"status": "Internal Server Error",
+					"code": 500,
 					"_postman_previewlanguage": "json",
 					"header": [
 						{
@@ -653,7 +475,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 15 Jun 2025 10:11:39 GMT"
+							"value": "Mon, 23 Jun 2025 19:54:51 GMT"
 						},
 						{
 							"key": "Content-Type",
@@ -665,7 +487,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"status\": 0,\n    \"data\": [],\n    \"message\": \"Incorrect passsword\"\n}"
+					"body": "{\n    \"status\": 0,\n    \"data\": [],\n    \"message\": \"Incorrect password\"\n}"
 				}
 			]
 		},
@@ -677,7 +499,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "1|FI4sPlRukRpgtFUgnGtFO2Kf0MIFNXHo0quiHeso5fe00878",
+							"value": "1|EHlCzpABHz0889sjdaOFvsMkX7hbj6HrSXjx1EmU115c80f1",
 							"type": "string"
 						}
 					]
@@ -695,7 +517,7 @@
 					"formdata": [
 						{
 							"key": "code",
-							"value": "487187",
+							"value": "689179",
 							"type": "text"
 						}
 					]
@@ -714,7 +536,7 @@
 			},
 			"response": [
 				{
-					"name": "success",
+					"name": "Email verified successfully",
 					"originalRequest": {
 						"method": "POST",
 						"header": [
@@ -729,7 +551,7 @@
 							"formdata": [
 								{
 									"key": "code",
-									"value": "487189",
+									"value": "272151",
 									"type": "text"
 								}
 							]
@@ -768,7 +590,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 15 Jun 2025 18:06:27 GMT"
+							"value": "Mon, 23 Jun 2025 19:58:08 GMT"
 						},
 						{
 							"key": "Content-Type",
@@ -798,7 +620,7 @@
 							"formdata": [
 								{
 									"key": "code",
-									"value": "487187",
+									"value": "272151",
 									"type": "text"
 								}
 							]
@@ -837,7 +659,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 15 Jun 2025 18:06:51 GMT"
+							"value": "Mon, 23 Jun 2025 19:58:28 GMT"
 						},
 						{
 							"key": "Content-Type",

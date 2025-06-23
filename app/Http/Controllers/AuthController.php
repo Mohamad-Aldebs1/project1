@@ -19,7 +19,6 @@ class AuthController extends Controller
             'first_name' => ['required'],
             'last_name' => ['required'],
             'email' => ['required', 'unique:users'],
-            'phone_number' => ['required', 'unique:users', 'min:10', 'max:10'],
             'password' => ['required', 'min:8'],
         ]);
 
@@ -27,7 +26,6 @@ class AuthController extends Controller
             'first_name' => $request['first_name'],
             'last_name' => $request['last_name'],
             'email' => $request['email'],
-            'phone_number' => $request['phone_number'],
             'password' => Hash::make($request['password']),
         ]);
 
@@ -86,41 +84,28 @@ class AuthController extends Controller
         ]);
     }
 
-    public function login(Request $request)
-    {
+    public function login(Request $request){
         $request->validate([
-            'login' => ['required'],
+            'email' => ['required','exists:users'],
             'password' => ['required'],
         ]);
-
-        $loginType = filter_var($request->login, FILTER_VALIDATE_EMAIL) ? 'email' : 'phone_number';
-
-        if (!User::where($loginType, $request->login)->exists()) {
+        if(!Auth::attempt(['email' => $request['email'] , 'password' => $request['password']])){
+            $message = 'Incorrect password';
             return response()->json([
                 'status' => 0,
                 'data' => [],
-                'message' => 'User not found'
-            ], 404);
+                'message' => $message
+            ] , 500);
         }
-
-        if (!Auth::attempt([$loginType => $request->login, 'password' => $request->password])) {
-            return response()->json([
-                'status' => 0,
-                'data' => [],
-                'message' => 'Incorrect passsword'
-            ], 401);
-        }
-
-        $user = User::query()->where($loginType, $request->login)->first();
+        $user =User::query()->where('email' , $request['email'])->first();
         $token = $user->createToken('auth_token')->plainTextToken;
-
+        $data =[];
+        $data ['user'] = $user;
+        $data['token'] = $token;
         return response()->json([
             'status' => 1,
-            'data' => [
-                'user' => $user,
-                'token' => $token
-            ],
-            'message' => 'User logged in successfully'
+            'data' => $data,
+            'message' => 'user logged in successfully'
         ]);
     }
     public function logout(){

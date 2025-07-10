@@ -15,4 +15,18 @@ class AuthorController extends Controller
         }
         return response()->json($author, 200);
     }
+    public function getDetailsOfAuthor($id)
+    {
+        $author = Author::find($id);
+
+        $books = Author::find($id)->books;
+        if($books->isEmpty()){
+           $books = null;
+        }
+        $data = [
+            'author' => $author,
+            'books' => $books
+        ];
+        return $data;
+    }
 }

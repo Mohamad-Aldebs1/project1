@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\SectionResource;
 use App\Models\Section;
 use Illuminate\Http\Request;
 
@@ -13,6 +14,6 @@ class SectionController extends Controller
         if ($sections->isEmpty()) {
             return response()->json(["message" => "No sections found"], 404);
         }
-        return response()->json($sections);
+        return response()->json(sectionResource::collection($sections), 200);
     }
 }

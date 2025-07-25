@@ -15,27 +15,27 @@ class SectionSeeder extends Seeder
     {
         Section::create([
             'name' => "Cultural",
-            'image'=>"http://localhost:8000/storage/img/cultural.jpg",
+            'image'=> "storage/img/cultural.jpg",
         ]);
         Section::create([
             'name' => "Philosophical",
-            'image' => 'http://localhost:8000/storage/img/philosophical.jpg',
+            'image' => asset('http://localhost:8000/storage/img/philosophical.jpg'),
         ]);
         Section::create([
             'name' => "Police",
-            'image' => 'http://localhost:8000/storage/img/police.jpg',
+            'image' => asset('http://localhost:8000/storage/img/police.jpg'),
         ]);
         Section::create([
             'name' => "Religious",
-            'image' =>'http://localhost:8000/storage/img/religious.jpg',
+            'image' =>asset('http://localhost:8000/storage/img/religious.jpg'),
         ]);
         Section::create([
             'name' => "Science fiction",
-            'image' =>'http://localhost:8000/storage/img/Science fiction.jpg',
+            'image' =>asset('http://localhost:8000/storage/img/Science fiction.jpg'),
         ]);
         Section::create([
             'name' => "Scientific",
-            'image' => 'http://localhost:8000/storage/img/scientific.jpg',
+            'image' => asset('http://localhost:8000/storage/img/scientific.jpg'),
         ]);
     }
 }

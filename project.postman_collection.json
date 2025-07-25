@@ -3,7 +3,8 @@
 		"_postman_id": "9bc66ba0-748a-4047-bca1-ac381801955c",
 		"name": "project",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "39457052"
+		"_exporter_id": "39457052",
+		"_collection_link": "https://prpject-4096.postman.co/workspace/prpject-Workspace~f4697778-00d5-48ff-89d3-7dc3ffc876e2/collection/39457052-9bc66ba0-748a-4047-bca1-ac381801955c?action=share&source=collection_link&creator=39457052"
 	},
 	"item": [
 		{
@@ -801,59 +802,6 @@
 			},
 			"response": [
 				{
-					"name": "success",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8000/api/getSections",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"api",
-								"getSections"
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Host",
-							"value": "localhost:8000"
-						},
-						{
-							"key": "Connection",
-							"value": "close"
-						},
-						{
-							"key": "X-Powered-By",
-							"value": "PHP/8.2.12"
-						},
-						{
-							"key": "Cache-Control",
-							"value": "no-cache, private"
-						},
-						{
-							"key": "Date",
-							"value": "Thu, 19 Jun 2025 12:25:36 GMT"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Access-Control-Allow-Origin",
-							"value": "*"
-						}
-					],
-					"cookie": [],
-					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Cultural\",\n        \"image\": \"http://localhost:8000/storage/img/cultural.jpg\",\n        \"created_at\": \"2025-06-18T22:02:30.000000Z\",\n        \"updated_at\": \"2025-06-18T22:02:30.000000Z\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Philosophical\",\n        \"image\": \"http://localhost:8000/storage/img/philosophical.jpg\",\n        \"created_at\": \"2025-06-18T22:02:30.000000Z\",\n        \"updated_at\": \"2025-06-18T22:02:30.000000Z\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Police\",\n        \"image\": \"http://localhost:8000/storage/img/police.jpg\",\n        \"created_at\": \"2025-06-18T22:02:30.000000Z\",\n        \"updated_at\": \"2025-06-18T22:02:30.000000Z\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Religious\",\n        \"image\": \"http://localhost:8000/storage/img/religious.jpg\",\n        \"created_at\": \"2025-06-18T22:02:30.000000Z\",\n        \"updated_at\": \"2025-06-18T22:02:30.000000Z\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Science fiction\",\n        \"image\": \"http://localhost:8000/storage/img/Science fiction.jpg\",\n        \"created_at\": \"2025-06-18T22:02:30.000000Z\",\n        \"updated_at\": \"2025-06-18T22:02:30.000000Z\"\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Scientific\",\n        \"image\": \"http://localhost:8000/storage/img/scientific.jpg\",\n        \"created_at\": \"2025-06-18T22:02:30.000000Z\",\n        \"updated_at\": \"2025-06-18T22:02:30.000000Z\"\n    }\n]"
-				},
-				{
 					"name": "no section found",
 					"originalRequest": {
 						"method": "GET",
@@ -905,6 +853,59 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"message\": \"No sections found\"\n}"
+				},
+				{
+					"name": "success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/getSections",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"getSections"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 25 Jul 2025 12:08:43 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Cultural\",\n        \"image\": \"storage/img/cultural.jpg\",\n        \"image_url\": \"http://localhost:8000/storage/img/cultural.jpg\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Philosophical\",\n        \"image\": \"http://localhost:8000/storage/img/philosophical.jpg\",\n        \"image_url\": \"http://localhost:8000/storage/img/philosophical.jpg\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Police\",\n        \"image\": \"http://localhost:8000/storage/img/police.jpg\",\n        \"image_url\": \"http://localhost:8000/storage/img/police.jpg\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Religious\",\n        \"image\": \"http://localhost:8000/storage/img/religious.jpg\",\n        \"image_url\": \"http://localhost:8000/storage/img/religious.jpg\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Science fiction\",\n        \"image\": \"http://localhost:8000/storage/img/Science fiction.jpg\",\n        \"image_url\": \"http://localhost:8000/storage/img/Science fiction.jpg\"\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Scientific\",\n        \"image\": \"http://localhost:8000/storage/img/scientific.jpg\",\n        \"image_url\": \"http://localhost:8000/storage/img/scientific.jpg\"\n    }\n]"
 				}
 			]
 		},

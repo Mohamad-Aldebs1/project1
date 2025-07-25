@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\AuthorResource;
+use App\Http\Resources\BookResource;
 use App\Models\Author;
 use Illuminate\Http\Request;
 
@@ -13,20 +15,17 @@ class AuthorController extends Controller
         if($author->isEmpty()){
             return response()->json(["message" => "No authors found"], 404);
         }
-        return response()->json($author, 200);
+        return response()->json(AuthorResource::collection($author), 200);
     }
     public function getDetailsOfAuthor($id)
     {
-        $author = Author::find($id);
+        $author = Author::findOrFail($id);
+        $books = $author->books;
 
-        $books = Author::find($id)->books;
-        if($books->isEmpty()){
-           $books = null;
-        }
-        $data = [
-            'author' => $author,
-            'books' => $books
+        return [
+            'author' => new AuthorResource($author),
+            'books' => BookResource::collection($books),
         ];
-        return $data;
+
     }
 }

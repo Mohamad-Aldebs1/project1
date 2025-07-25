@@ -19,23 +19,23 @@ class SectionSeeder extends Seeder
         ]);
         Section::create([
             'name' => "Philosophical",
-            'image' => asset('http://localhost:8000/storage/img/philosophical.jpg'),
+            'image' => 'storage/img/philosophical.jpg',
         ]);
         Section::create([
             'name' => "Police",
-            'image' => asset('http://localhost:8000/storage/img/police.jpg'),
+            'image' => 'storage/img/police.jpg',
         ]);
         Section::create([
             'name' => "Religious",
-            'image' =>asset('http://localhost:8000/storage/img/religious.jpg'),
+            'image' => 'storage/img/religious.jpg',
         ]);
         Section::create([
             'name' => "Science fiction",
-            'image' =>asset('http://localhost:8000/storage/img/Science fiction.jpg'),
+            'image' =>'storage/img/ScienceFiction.jpg',
         ]);
         Section::create([
             'name' => "Scientific",
-            'image' => asset('http://localhost:8000/storage/img/scientific.jpg'),
+            'image' => 'storage/img/scientific.jpg',
         ]);
     }
 }

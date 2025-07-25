@@ -15,7 +15,7 @@ class BookSeeder extends Seeder
     {
         Book::create([
             'title' => "So That My Heart May Find Peace",
-            'image' => "http://localhost:8000/storage/img/books/book1.jpg",
+            'image' => "storage/img/books/book1.jpg",
             'description' => "A philosophical and emotional narrative where a man's journey leads him to spiritual insight through conversations with a stranger. The novel gently explores pain, doubt, and belief with poetic depth.",
             'is paid'=> false,
             'price'=> null,
@@ -25,7 +25,7 @@ class BookSeeder extends Seeder
         ]);
         Book::create([
             'title' => "The Jasmine's Exile",
-            'image' => "http://localhost:8000/storage/img/books/book2.jpg",
+            'image' => "storage/img/books/book2.jpg",
             'description' => "A young Tunisian woman moves to France for her studies and faces cultural alienation, religious prejudice, and identity conflict. The novel explores the emotional and social struggles of Muslim immigrants in Western societies.",
             'is paid'=> false,
             'price'=> null,
@@ -35,7 +35,7 @@ class BookSeeder extends Seeder
         ]);
         Book::create([
             'title' => "The Spy",
-            'image' => "http://localhost:8000/storage/img/books/book3.jpg",
+            'image' => "storage/img/books/book3.jpg",
             'description' => "A fictionalized account of Mata Hari, the infamous dancer turned spy during World War I. The novel explores her final days, revealing a woman misunderstood by history and condemned for her allure and independence.",
             'is paid'=> false,
             'price'=> null,
@@ -45,7 +45,7 @@ class BookSeeder extends Seeder
         ]);
         Book::create([
             'title' => "The Murder on the Links",
-            'image' => "http://localhost:8000/storage/img/books/book4.jpg",
+            'image' => "storage/img/books/book4.jpg",
             'description' => "Hercule Poirot is summoned to France only to find his client murdered and buried on a golf course. With twists, disguises, and a second corpse, Poirot must untangle a web of secrets from the past to reveal the killer.",
             'is paid'=> false,
             'price'=> null,
@@ -55,7 +55,7 @@ class BookSeeder extends Seeder
         ]);
         Book::create([
             'title' => "Endless Night",
-            'image' => "http://localhost:8000/storage/img/books/book5.jpg",
+            'image' => "storage/img/books/book5.jpg",
             'description' => "A psychological crime novel where a charming young man marries a wealthy heiress, only to reveal dark motives beneath a romantic façade. Twists unfold as love, greed, and guilt collide in a haunting countryside estate.",
             'is paid'=> true,
             'price'=> 150,
@@ -65,7 +65,7 @@ class BookSeeder extends Seeder
         ]);
         Book::create([
             'title' => "Arsses",
-            'image' => "http://localhost:8000/storage/img/books/book6.jpg",
+            'image' => "storage/img/books/book6.jpg",
             'description' => "A Saudi sci-fi adventure where a team of scientists investigates a mysterious object in the sky, only to discover a portal to another world. The novel blends space exploration, alien encounters, and psychological tension.",
             'is paid'=> false,
             'price'=> null,
@@ -75,7 +75,7 @@ class BookSeeder extends Seeder
         ]);
         Book::create([
             'title' => "Al-Sajil",
-            'image' => "http://localhost:8000/storage/img/books/book7.jpg",
+            'image' => "storage/img/books/book7.jpg",
             'description' => "A fantasy thriller and the fourth part of the “Clay and Fire” saga, where secrets from the Barzakh threaten to reshape Earth’s history. The story follows Asif as he faces mysterious forces and a revelation that could alter fate itself.",
             'is paid'=> true,
             'price'=> 120,
@@ -85,7 +85,7 @@ class BookSeeder extends Seeder
         ]);
         Book::create([
             'title' => "The Diary of a Writer",
-            'image' => "http://localhost:8000/storage/img/books/book8.jpg",
+            'image' => "storage/img/books/book8.jpg",
             'description' => "A collection of essays and reflections where Dostoevsky explores political, religious, and social themes through personal commentary and philosophical depth",
             'is paid'=> false,
             'price'=> null,
@@ -95,7 +95,7 @@ class BookSeeder extends Seeder
         ]);
         Book::create([
             'title' => "White Nights",
-            'image' => "http://localhost:8000/storage/img/books/book9.jpg",
+            'image' => "storage/img/books/book9.jpg",
             'description' => "A short romantic tale about a lonely dreamer who falls in love over four nights with a woman waiting for another, exploring longing and emotional isolation.",
             'is paid'=> true,
             'price'=> 170,
@@ -105,7 +105,7 @@ class BookSeeder extends Seeder
         ]);
         Book::create([
             'title' => "Jasmine of Return",
-            'image' => "http://localhost:8000/storage/img/books/book10.jpg",
+            'image' => "storage/img/books/book10.jpg",
             'description' => "A continuation of the jasmine-themed narrative, this novel explores identity, exile, and emotional return in the face of cultural and personal struggle.",
             'is paid'=> true,
             'price'=> 165,
@@ -115,7 +115,7 @@ class BookSeeder extends Seeder
         ]);
         Book::create([
             'title' => "In My Heart Lives a Hebrew Woman",
-            'image' => "http://localhost:8000/storage/img/books/book11.jpg",
+            'image' => "storage/img/books/book11.jpg",
             'description' => "Based on a true story, it follows a Jewish girl’s journey toward Islam and resistance in southern Lebanon, tackling themes of tolerance and belief.",
             'is paid'=> true,
             'price'=> 90,
@@ -125,7 +125,7 @@ class BookSeeder extends Seeder
         ]);
         Book::create([
             'title' => "Outlaw Scribbles",
-            'image' => "http://localhost:8000/storage/img/books/book12.jpg",
+            'image' => "storage/img/books/book12.jpg",
             'description' => "A collection of socially charged thoughts and poetic reflections challenging conventional norms and provoking introspective dialogue.",
             'is paid'=> true,
             'price'=> 125,
@@ -135,7 +135,7 @@ class BookSeeder extends Seeder
         ]);
         Book::create([
             'title' => "Letters from the Qur’an",
-            'image' => "http://localhost:8000/storage/img/books/book13.jpg",
+            'image' => "storage/img/books/book13.jpg",
             'description' => "Spiritual letters inspired by Qur’anic themes, offering heartfelt reflections on faith, humanity, and everyday struggles with lyrical sensitivity.",
             'is paid'=> true,
             'price'=> 140,
@@ -145,7 +145,7 @@ class BookSeeder extends Seeder
         ]);
         Book::create([
             'title' => "Pulse",
-            'image' => "http://localhost:8000/storage/img/books/book14.jpg",
+            'image' => "storage/img/books/book14.jpg",
             'description' => "A romantic and philosophical tale where emotions are tested by war, faith, and self-discovery, layered with poetic introspection.",
             'is paid'=> true,
             'price'=> 200,
@@ -155,7 +155,7 @@ class BookSeeder extends Seeder
         ]);
         Book::create([
             'title' => "The Not-Impossible Mission",
-            'image' => "http://localhost:8000/storage/img/books/book15.jpg",
+            'image' => "storage/img/books/book15.jpg",
             'description' => "A motivational book that merges spiritual purpose with social insight, aiming to inspire meaningful change despite seemingly impossible odds.",
             'is paid'=> true,
             'price'=> 115,
@@ -165,7 +165,7 @@ class BookSeeder extends Seeder
         ]);
         Book::create([
             'title' => "Crime and Punishment",
-            'image' => "http://localhost:8000/storage/img/books/book16.jpg",
+            'image' => "storage/img/books/book16.jpg",
             'description' => "A psychological masterpiece exploring guilt, redemption, and morality through the mind of a young man who commits murder in search of justice.",
             'is paid'=> true,
             'price'=> 185,
@@ -175,7 +175,7 @@ class BookSeeder extends Seeder
         ]);
         Book::create([
             'title' => "The Gambler",
-            'image' => "http://localhost:8000/storage/img/books/book17.jpg",
+            'image' => "storage/img/books/book17.jpg",
             'description' => "A semi-autobiographical novel centered on a man consumed by gambling addiction, personal pride, and a doomed romance.",
             'is paid'=> true,
             'price'=> 150,
@@ -185,7 +185,7 @@ class BookSeeder extends Seeder
         ]);
         Book::create([
             'title' => "The Power of Letting Go",
-            'image' => "http://localhost:8000/storage/img/books/book18.jpg",
+            'image' => "storage/img/books/book18.jpg",
             'description' => "A transformative self-help guide encouraging emotional release, healing, and inner peace through acceptance and mindfulness.",
             'is paid'=> true,
             'price'=> 140,
@@ -195,7 +195,7 @@ class BookSeeder extends Seeder
         ]);
         Book::create([
             'title' => "The Pistachio Theory",
-            'image' => "http://localhost:8000/storage/img/books/book19.jpg",
+            'image' => "storage/img/books/book19.jpg",
             'description' => "A popular Arabic self-development book that uses storytelling and metaphor to explore human behavior, decision-making, and mental clarity.",
             'is paid'=> true,
             'price'=> 210,
@@ -205,7 +205,7 @@ class BookSeeder extends Seeder
         ]);
         Book::create([
             'title' => "Appointment with Death",
-            'image' => "http://localhost:8000/storage/img/books/book20.jpg",
+            'image' => "storage/img/books/book20.jpg",
             'description' => "Hercule Poirot investigates a murder in Petra where a tyrannical matriarch’s death uncovers layers of family secrets and motives.",
             'is paid'=> true,
             'price'=> 145,
@@ -215,7 +215,7 @@ class BookSeeder extends Seeder
         ]);
         Book::create([
             'title' => "I, Robot",
-            'image' => "http://localhost:8000/storage/img/books/book21.jpg",
+            'image' => "storage/img/books/book21.jpg",
             'description' => "A series of science fiction stories exploring artificial intelligence and ethics, famously introducing the Three Laws of Robotics.",
             'is paid'=> true,
             'price'=> 100,

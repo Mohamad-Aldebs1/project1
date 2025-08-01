@@ -22,4 +22,8 @@ class Book extends Model
     public function section(){
         return $this->belongsTo(Section::class);
     }
+
+    public function usersFavorites (){
+        return $this->belongsToMany(User::class,'favorites');
+    }
 }

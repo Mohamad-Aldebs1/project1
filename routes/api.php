@@ -3,6 +3,7 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\AuthorController;
 use App\Http\Controllers\BookController;
+use App\Http\Controllers\FavoriteController;
 use App\Http\Controllers\SectionController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -13,6 +14,9 @@ Route::get('/user', function (Request $request) {
 
 Route::middleware('auth:sanctum')->group(function(){
     Route::get('logout' , [AuthController::class , 'logout']);
+    Route::Post('/addFavorite/{bookId}',[FavoriteController::class,'addFavorite']);
+    Route::delete('/removeFavorite/{bookId}',[FavoriteController::class,'removeFavorite']);
+    Route::get('/getFavorites',[FavoriteController::class,'getFavorites']);
 });
 Route::post('/register' , [AuthController::class , 'register']);
 Route::Post('/verifyEmail' , [AuthController::class , 'verifyEmail'])->middleware('auth:sanctum');
@@ -22,4 +26,5 @@ Route::get('/getAuthors',[AuthorController::class,'getAuthors']);
 Route::get('/getDetailsOfAuthor/{id}',[AuthorController::class,'getDetailsOfAuthor']);
 Route::get('/getBooksOfSection/{id}',[BookController::class,'getBooksOfSection']);
 Route::get('/getBookDetail/{id}',[BookController::class,'getBookDetail']);
+
 

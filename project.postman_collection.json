@@ -1177,6 +1177,228 @@
 					"body": "{\n    \"data\": {\n        \"id\": 10,\n        \"title\": \"Jasmine of Return\",\n        \"description\": \"A continuation of the jasmine-themed narrative, this novel explores identity, exile, and emotional return in the face of cultural and personal struggle.\",\n        \"is_paid\": null,\n        \"price\": 165,\n        \"author_id\": 6,\n        \"section_id\": 1,\n        \"image\": \"storage/img/books/book10.jpg\",\n        \"image_url\": \"http://localhost:8000/storage/img/books/book10.jpg\",\n        \"file_url\": \"https://book-shadow.com/files/fhrst11/571.pdf\",\n        \"created_at\": \"2025-07-25T12:56:47.000000Z\"\n    }\n}"
 				}
 			]
+		},
+		{
+			"name": "Favorite",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/getFavorites",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"getFavorites"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "success add to favorite",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/addFavorite/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"addFavorite",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 01 Aug 2025 13:45:08 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"book added to favorite successfully\",\n    \"favorite\": {\n        \"user_id\": 1,\n        \"book_id\": \"2\",\n        \"updated_at\": \"2025-08-01T13:45:08.000000Z\",\n        \"created_at\": \"2025-08-01T13:45:08.000000Z\",\n        \"id\": 2\n    }\n}"
+				},
+				{
+					"name": "remove from favorite",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/removeFavorite/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"removeFavorite",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 01 Aug 2025 13:46:46 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"book removed from favorite successfully\"\n}"
+				},
+				{
+					"name": "get favorities book",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/getFavorites",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"getFavorites"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 01 Aug 2025 13:54:19 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"favorites\": [\n        {\n            \"id\": 1,\n            \"title\": \"So That My Heart May Find Peace\",\n            \"image\": \"storage/img/books/book1.jpg\",\n            \"description\": \"A philosophical and emotional narrative where a man's journey leads him to spiritual insight through conversations with a stranger. The novel gently explores pain, doubt, and belief with poetic depth.\",\n            \"is paid\": 0,\n            \"price\": null,\n            \"author_id\": 1,\n            \"section_id\": 4,\n            \"file_url\": \"https://archive.org/download/arabicnovels00045/Arabic-Novels-00045.pdf\",\n            \"created_at\": \"2025-08-01T13:28:35.000000Z\",\n            \"updated_at\": \"2025-08-01T13:28:35.000000Z\",\n            \"pivot\": {\n                \"user_id\": 1,\n                \"book_id\": 1\n            }\n        },\n        {\n            \"id\": 21,\n            \"title\": \"I, Robot\",\n            \"image\": \"storage/img/books/book21.jpg\",\n            \"description\": \"A series of science fiction stories exploring artificial intelligence and ethics, famously introducing the Three Laws of Robotics.\",\n            \"is paid\": 1,\n            \"price\": 100,\n            \"author_id\": null,\n            \"section_id\": 5,\n            \"file_url\": \"https://down.ketabpedia.com/files/bnr/bnr10255-1.pdf\",\n            \"created_at\": \"2025-08-01T13:28:35.000000Z\",\n            \"updated_at\": \"2025-08-01T13:28:35.000000Z\",\n            \"pivot\": {\n                \"user_id\": 1,\n                \"book_id\": 21\n            }\n        }\n    ]\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": "",
+			"type": "default"
 		}
 	]
 }

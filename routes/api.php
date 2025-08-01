@@ -4,6 +4,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\AuthorController;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\FavoriteController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SectionController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -17,6 +18,8 @@ Route::middleware('auth:sanctum')->group(function(){
     Route::Post('/addFavorite/{bookId}',[FavoriteController::class,'addFavorite']);
     Route::delete('/removeFavorite/{bookId}',[FavoriteController::class,'removeFavorite']);
     Route::get('/getFavorites',[FavoriteController::class,'getFavorites']);
+    Route::get('/getProfile',[ProfileController::class,'getProfile']);
+    Route::post('/updateProfile',[ProfileController::class,'updateProfile']);
 });
 Route::post('/register' , [AuthController::class , 'register']);
 Route::Post('/verifyEmail' , [AuthController::class , 'verifyEmail'])->middleware('auth:sanctum');

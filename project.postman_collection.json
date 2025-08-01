@@ -1396,8 +1396,50 @@
 		{
 			"name": "profile",
 			"request": {
-				"method": "GET",
-				"header": []
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "Mohamad",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Aldebs",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/updateProfile",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"updateProfile"
+					]
+				}
 			},
 			"response": [
 				{
@@ -1532,6 +1574,168 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"message\": \"Profile updated successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "search",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/search?query=Sc",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "Sc"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/search?query=Sc",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"search"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "Sc"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 01 Aug 2025 18:27:37 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"books\": [\n        {\n            \"id\": 12,\n            \"title\": \"Outlaw Scribbles\",\n            \"image\": \"storage/img/books/book12.jpg\",\n            \"description\": \"A collection of socially charged thoughts and poetic reflections challenging conventional norms and provoking introspective dialogue.\",\n            \"is paid\": 1,\n            \"price\": 125,\n            \"author_id\": 1,\n            \"section_id\": 1,\n            \"file_url\": \"https://down.ketabpedia.com/files/bnr/bnr779-1.pdf\",\n            \"created_at\": \"2025-08-01T18:16:41.000000Z\",\n            \"updated_at\": \"2025-08-01T18:16:41.000000Z\"\n        }\n    ],\n    \"authors\": [],\n    \"section\": [\n        {\n            \"id\": 5,\n            \"name\": \"Science fiction\",\n            \"image\": \"storage/img/ScienceFiction.jpg\",\n            \"created_at\": \"2025-08-01T18:16:41.000000Z\",\n            \"updated_at\": \"2025-08-01T18:16:41.000000Z\"\n        },\n        {\n            \"id\": 6,\n            \"name\": \"Scientific\",\n            \"image\": \"storage/img/scientific.jpg\",\n            \"created_at\": \"2025-08-01T18:16:41.000000Z\",\n            \"updated_at\": \"2025-08-01T18:16:41.000000Z\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "empty",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/search?query=Sziadafa",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"search"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "Sziadafa"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 01 Aug 2025 18:28:12 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"books\": [],\n    \"authors\": [],\n    \"section\": []\n}"
 				}
 			]
 		}

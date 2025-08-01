@@ -5,6 +5,7 @@ use App\Http\Controllers\AuthorController;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\FavoriteController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SearchController;
 use App\Http\Controllers\SectionController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -29,5 +30,5 @@ Route::get('/getAuthors',[AuthorController::class,'getAuthors']);
 Route::get('/getDetailsOfAuthor/{id}',[AuthorController::class,'getDetailsOfAuthor']);
 Route::get('/getBooksOfSection/{id}',[BookController::class,'getBooksOfSection']);
 Route::get('/getBookDetail/{id}',[BookController::class,'getBookDetail']);
-
+Route::get('/search',[SearchController::class,'search']);
 

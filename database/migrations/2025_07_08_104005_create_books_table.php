@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('image');
             $table->string('description');
             $table->boolean('is paid');
+            $table->boolean('is_favorite')->default(false);
             $table->double('price')->nullable();
             $table->foreignId('author_id')->nullable()->constrained('authors')->cascadeOnDelete()->cascadeOnUpdate();
             $table->foreignId('section_id')->constrained('sections')->cascadeOnDelete()->cascadeOnUpdate();

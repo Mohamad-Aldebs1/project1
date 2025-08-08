@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Book;
 use App\Models\Favorite;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
@@ -15,6 +16,11 @@ class FavoriteController extends Controller
             'user_id' => $userId,
             'book_id' => $bookId
         ]);
+
+        $book = Book::find($bookId);
+        $book->is_favorite = true;
+        $book->save();
+
         return response()->json([
                 'message' => 'book added to favorite successfully',
                 'favorite' => $favorite,
@@ -25,6 +31,11 @@ class FavoriteController extends Controller
         Favorite::where('user_id',$userId)
             ->where('book_id',$bookId)
             ->delete();
+
+        $book = Book::find($bookId);
+        $book->is_favorite = false;
+        $book->save();
+
         return response()->json([
             'message' => 'book removed from favorite successfully',
         ]);

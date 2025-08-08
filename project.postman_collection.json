@@ -234,7 +234,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "1|EHlCzpABHz0889sjdaOFvsMkX7hbj6HrSXjx1EmU115c80f1",
+							"value": "{{t}}",
 							"type": "string"
 						}
 					]
@@ -684,7 +684,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "S882uWfMo4p8sIC3LHvX49EN7Jt35tEQM3KndYIG9869a633",
+							"value": "{{t}}",
 							"type": "string"
 						}
 					]
@@ -980,7 +980,7 @@
 					},
 					"status": "OK",
 					"code": 200,
-					"_postman_previewlanguage": "json",
+					"_postman_previewlanguage": null,
 					"header": [
 						{
 							"key": "Host",
@@ -1000,7 +1000,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Fri, 25 Jul 2025 12:58:11 GMT"
+							"value": "Fri, 08 Aug 2025 11:13:23 GMT"
 						},
 						{
 							"key": "Content-Type",
@@ -1012,7 +1012,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"author\": {\n        \"id\": 1,\n        \"name\": \"Adham Sharkawi\",\n        \"about\": \"Adham Sharkawi is a Palestinian writer born in 1980 in Tyre, Lebanon. He holds a diploma in Physical Education and both a BA and MA in Arabic Literature from the Lebanese University in Beirut. He began his writing career on the online forum \\\"Al-Sakher\\\" and published his first book, Morning Talk, in 2012. He is known for his storytelling style and writes under the pseudonym Quss Ibn Sa‘idah. His works, such as Messages from the Qur’an and With the Prophet, are widely read across the Arab world, especially among youth\",\n        \"photo\": \"storage/img/AdhamSharkawi.jpg\",\n        \"photo_url\": \"http://localhost:8000/storage/img/AdhamSharkawi.jpg\"\n    },\n    \"books\": [\n        {\n            \"id\": 1,\n            \"title\": \"So That My Heart May Find Peace\",\n            \"description\": \"A philosophical and emotional narrative where a man's journey leads him to spiritual insight through conversations with a stranger. The novel gently explores pain, doubt, and belief with poetic depth.\",\n            \"is_paid\": null,\n            \"price\": null,\n            \"author_id\": 1,\n            \"section_id\": 4,\n            \"image\": \"storage/img/books/book1.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book1.jpg\",\n            \"file_url\": \"https://archive.org/download/arabicnovels00045/Arabic-Novels-00045.pdf\",\n            \"created_at\": \"2025-07-25T12:56:47.000000Z\"\n        },\n        {\n            \"id\": 12,\n            \"title\": \"Outlaw Scribbles\",\n            \"description\": \"A collection of socially charged thoughts and poetic reflections challenging conventional norms and provoking introspective dialogue.\",\n            \"is_paid\": null,\n            \"price\": 125,\n            \"author_id\": 1,\n            \"section_id\": 1,\n            \"image\": \"storage/img/books/book12.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book12.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bnr/bnr779-1.pdf\",\n            \"created_at\": \"2025-07-25T12:56:47.000000Z\"\n        },\n        {\n            \"id\": 13,\n            \"title\": \"Letters from the Qur’an\",\n            \"description\": \"Spiritual letters inspired by Qur’anic themes, offering heartfelt reflections on faith, humanity, and everyday struggles with lyrical sensitivity.\",\n            \"is_paid\": null,\n            \"price\": 140,\n            \"author_id\": 1,\n            \"section_id\": 4,\n            \"image\": \"storage/img/books/book13.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book13.jpg\",\n            \"file_url\": \"https://ketabpedia.com/wp-content/uploads/2024/07/rasaailquranadham.pdf\",\n            \"created_at\": \"2025-07-25T12:56:47.000000Z\"\n        },\n        {\n            \"id\": 14,\n            \"title\": \"Pulse\",\n            \"description\": \"A romantic and philosophical tale where emotions are tested by war, faith, and self-discovery, layered with poetic introspection.\",\n            \"is_paid\": null,\n            \"price\": 200,\n            \"author_id\": 1,\n            \"section_id\": 2,\n            \"image\": \"storage/img/books/book14.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book14.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bm4u/0B3qzqlRcP02Ycl9raDJmTGR5RVk.pdf\",\n            \"created_at\": \"2025-07-25T12:56:47.000000Z\"\n        }\n    ]\n}"
+					"body": "{\n    \"author\": {\n        \"id\": 1,\n        \"name\": \"Adham Sharkawi\",\n        \"about\": \"Adham Sharkawi is a Palestinian writer born in 1980 in Tyre, Lebanon. He holds a diploma in Physical Education and both a BA and MA in Arabic Literature from the Lebanese University in Beirut. He began his writing career on the online forum \\\"Al-Sakher\\\" and published his first book, Morning Talk, in 2012. He is known for his storytelling style and writes under the pseudonym Quss Ibn Sa‘idah. His works, such as Messages from the Qur’an and With the Prophet, are widely read across the Arab world, especially among youth\",\n        \"photo\": \"storage/img/AdhamSharkawi.jpg\",\n        \"photo_url\": \"http://localhost:8000/storage/img/AdhamSharkawi.jpg\"\n    },\n    \"books\": [\n        {\n            \"id\": 1,\n            \"title\": \"So That My Heart May Find Peace\",\n            \"description\": \"A philosophical and emotional narrative where a man's journey leads him to spiritual insight through conversations with a stranger. The novel gently explores pain, doubt, and belief with poetic depth.\",\n            \"is_paid\": null,\n            \"is_favorite\": 1,\n            \"price\": null,\n            \"author_id\": 1,\n            \"section_id\": 4,\n            \"image\": \"storage/img/books/book1.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book1.jpg\",\n            \"file_url\": \"https://archive.org/download/arabicnovels00045/Arabic-Novels-00045.pdf\",\n            \"created_at\": \"2025-08-08T11:10:30.000000Z\"\n        },\n        {\n            \"id\": 12,\n            \"title\": \"Outlaw Scribbles\",\n            \"description\": \"A collection of socially charged thoughts and poetic reflections challenging conventional norms and provoking introspective dialogue.\",\n            \"is_paid\": null,\n            \"is_favorite\": 0,\n            \"price\": 125,\n            \"author_id\": 1,\n            \"section_id\": 1,\n            \"image\": \"storage/img/books/book12.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book12.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bnr/bnr779-1.pdf\",\n            \"created_at\": \"2025-08-08T11:10:30.000000Z\"\n        },\n        {\n            \"id\": 13,\n            \"title\": \"Letters from the Qur’an\",\n            \"description\": \"Spiritual letters inspired by Qur’anic themes, offering heartfelt reflections on faith, humanity, and everyday struggles with lyrical sensitivity.\",\n            \"is_paid\": null,\n            \"is_favorite\": 0,\n            \"price\": 140,\n            \"author_id\": 1,\n            \"section_id\": 4,\n            \"image\": \"storage/img/books/book13.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book13.jpg\",\n            \"file_url\": \"https://ketabpedia.com/wp-content/uploads/2024/07/rasaailquranadham.pdf\",\n            \"created_at\": \"2025-08-08T11:10:30.000000Z\"\n        },\n        {\n            \"id\": 14,\n            \"title\": \"Pulse\",\n            \"description\": \"A romantic and philosophical tale where emotions are tested by war, faith, and self-discovery, layered with poetic introspection.\",\n            \"is_paid\": null,\n            \"is_favorite\": 0,\n            \"price\": 200,\n            \"author_id\": 1,\n            \"section_id\": 2,\n            \"image\": \"storage/img/books/book14.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book14.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bm4u/0B3qzqlRcP02Ycl9raDJmTGR5RVk.pdf\",\n            \"created_at\": \"2025-08-08T11:10:30.000000Z\"\n        }\n    ]\n}"
 				}
 			]
 		},
@@ -1055,7 +1055,7 @@
 					},
 					"status": "OK",
 					"code": 200,
-					"_postman_previewlanguage": "json",
+					"_postman_previewlanguage": null,
 					"header": [
 						{
 							"key": "Host",
@@ -1075,7 +1075,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Fri, 25 Jul 2025 12:58:56 GMT"
+							"value": "Fri, 08 Aug 2025 11:14:14 GMT"
 						},
 						{
 							"key": "Content-Type",
@@ -1087,7 +1087,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"data\": [\n        {\n            \"id\": 2,\n            \"title\": \"The Jasmine's Exile\",\n            \"description\": \"A young Tunisian woman moves to France for her studies and faces cultural alienation, religious prejudice, and identity conflict. The novel explores the emotional and social struggles of Muslim immigrants in Western societies.\",\n            \"is_paid\": null,\n            \"price\": null,\n            \"author_id\": 6,\n            \"section_id\": 1,\n            \"image\": \"storage/img/books/book2.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book2.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bm4u/0B3qzqlRcP02YUGptQkpDVVpBWWc.pdf\",\n            \"created_at\": \"2025-07-25T12:56:47.000000Z\"\n        },\n        {\n            \"id\": 8,\n            \"title\": \"The Diary of a Writer\",\n            \"description\": \"A collection of essays and reflections where Dostoevsky explores political, religious, and social themes through personal commentary and philosophical depth\",\n            \"is_paid\": null,\n            \"price\": null,\n            \"author_id\": 5,\n            \"section_id\": 1,\n            \"image\": \"storage/img/books/book8.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book8.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bm4u/1TyeFh4kx8AARtibyfckZt-7gMKx8Tgwa.pdf\",\n            \"created_at\": \"2025-07-25T12:56:47.000000Z\"\n        },\n        {\n            \"id\": 10,\n            \"title\": \"Jasmine of Return\",\n            \"description\": \"A continuation of the jasmine-themed narrative, this novel explores identity, exile, and emotional return in the face of cultural and personal struggle.\",\n            \"is_paid\": null,\n            \"price\": 165,\n            \"author_id\": 6,\n            \"section_id\": 1,\n            \"image\": \"storage/img/books/book10.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book10.jpg\",\n            \"file_url\": \"https://book-shadow.com/files/fhrst11/571.pdf\",\n            \"created_at\": \"2025-07-25T12:56:47.000000Z\"\n        },\n        {\n            \"id\": 11,\n            \"title\": \"In My Heart Lives a Hebrew Woman\",\n            \"description\": \"Based on a true story, it follows a Jewish girl’s journey toward Islam and resistance in southern Lebanon, tackling themes of tolerance and belief.\",\n            \"is_paid\": null,\n            \"price\": 90,\n            \"author_id\": 6,\n            \"section_id\": 1,\n            \"image\": \"storage/img/books/book11.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book11.jpg\",\n            \"file_url\": \"https://ketabpedia.com/wp-content/uploads/2019/01/%D9%81%D9%8A-%D9%82%D9%84%D8%A8%D9%8A-%D8%A3%D9%86%D8%AB%D9%89-%D8%B9%D8%A8%D8%B1%D9%8A%D8%A9_%D8%AE%D9%88%D9%84%D8%A9-%D8%AD%D9%85%D8%AF%D9%8A.pdf\",\n            \"created_at\": \"2025-07-25T12:56:47.000000Z\"\n        },\n        {\n            \"id\": 12,\n            \"title\": \"Outlaw Scribbles\",\n            \"description\": \"A collection of socially charged thoughts and poetic reflections challenging conventional norms and provoking introspective dialogue.\",\n            \"is_paid\": null,\n            \"price\": 125,\n            \"author_id\": 1,\n            \"section_id\": 1,\n            \"image\": \"storage/img/books/book12.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book12.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bnr/bnr779-1.pdf\",\n            \"created_at\": \"2025-07-25T12:56:47.000000Z\"\n        }\n    ]\n}"
+					"body": "{\n    \"data\": [\n        {\n            \"id\": 2,\n            \"title\": \"The Jasmine's Exile\",\n            \"description\": \"A young Tunisian woman moves to France for her studies and faces cultural alienation, religious prejudice, and identity conflict. The novel explores the emotional and social struggles of Muslim immigrants in Western societies.\",\n            \"is_paid\": null,\n            \"is_favorite\": 0,\n            \"price\": null,\n            \"author_id\": 6,\n            \"section_id\": 1,\n            \"image\": \"storage/img/books/book2.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book2.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bm4u/0B3qzqlRcP02YUGptQkpDVVpBWWc.pdf\",\n            \"created_at\": \"2025-08-08T11:10:30.000000Z\"\n        },\n        {\n            \"id\": 8,\n            \"title\": \"The Diary of a Writer\",\n            \"description\": \"A collection of essays and reflections where Dostoevsky explores political, religious, and social themes through personal commentary and philosophical depth\",\n            \"is_paid\": null,\n            \"is_favorite\": 0,\n            \"price\": null,\n            \"author_id\": 5,\n            \"section_id\": 1,\n            \"image\": \"storage/img/books/book8.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book8.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bm4u/1TyeFh4kx8AARtibyfckZt-7gMKx8Tgwa.pdf\",\n            \"created_at\": \"2025-08-08T11:10:30.000000Z\"\n        },\n        {\n            \"id\": 10,\n            \"title\": \"Jasmine of Return\",\n            \"description\": \"A continuation of the jasmine-themed narrative, this novel explores identity, exile, and emotional return in the face of cultural and personal struggle.\",\n            \"is_paid\": null,\n            \"is_favorite\": 1,\n            \"price\": 165,\n            \"author_id\": 6,\n            \"section_id\": 1,\n            \"image\": \"storage/img/books/book10.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book10.jpg\",\n            \"file_url\": \"https://book-shadow.com/files/fhrst11/571.pdf\",\n            \"created_at\": \"2025-08-08T11:10:30.000000Z\"\n        },\n        {\n            \"id\": 11,\n            \"title\": \"In My Heart Lives a Hebrew Woman\",\n            \"description\": \"Based on a true story, it follows a Jewish girl’s journey toward Islam and resistance in southern Lebanon, tackling themes of tolerance and belief.\",\n            \"is_paid\": null,\n            \"is_favorite\": 0,\n            \"price\": 90,\n            \"author_id\": 6,\n            \"section_id\": 1,\n            \"image\": \"storage/img/books/book11.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book11.jpg\",\n            \"file_url\": \"https://ketabpedia.com/wp-content/uploads/2019/01/%D9%81%D9%8A-%D9%82%D9%84%D8%A8%D9%8A-%D8%A3%D9%86%D8%AB%D9%89-%D8%B9%D8%A8%D8%B1%D9%8A%D8%A9_%D8%AE%D9%88%D9%84%D8%A9-%D8%AD%D9%85%D8%AF%D9%8A.pdf\",\n            \"created_at\": \"2025-08-08T11:10:30.000000Z\"\n        },\n        {\n            \"id\": 12,\n            \"title\": \"Outlaw Scribbles\",\n            \"description\": \"A collection of socially charged thoughts and poetic reflections challenging conventional norms and provoking introspective dialogue.\",\n            \"is_paid\": null,\n            \"is_favorite\": 0,\n            \"price\": 125,\n            \"author_id\": 1,\n            \"section_id\": 1,\n            \"image\": \"storage/img/books/book12.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book12.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bnr/bnr779-1.pdf\",\n            \"created_at\": \"2025-08-08T11:10:30.000000Z\"\n        }\n    ]\n}"
 				}
 			]
 		},
@@ -1142,102 +1142,6 @@
 					},
 					"status": "OK",
 					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Host",
-							"value": "localhost:8000"
-						},
-						{
-							"key": "Connection",
-							"value": "close"
-						},
-						{
-							"key": "X-Powered-By",
-							"value": "PHP/8.2.12"
-						},
-						{
-							"key": "Cache-Control",
-							"value": "no-cache, private"
-						},
-						{
-							"key": "Date",
-							"value": "Fri, 25 Jul 2025 13:02:28 GMT"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Access-Control-Allow-Origin",
-							"value": "*"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"data\": {\n        \"id\": 10,\n        \"title\": \"Jasmine of Return\",\n        \"description\": \"A continuation of the jasmine-themed narrative, this novel explores identity, exile, and emotional return in the face of cultural and personal struggle.\",\n        \"is_paid\": null,\n        \"price\": 165,\n        \"author_id\": 6,\n        \"section_id\": 1,\n        \"image\": \"storage/img/books/book10.jpg\",\n        \"image_url\": \"http://localhost:8000/storage/img/books/book10.jpg\",\n        \"file_url\": \"https://book-shadow.com/files/fhrst11/571.pdf\",\n        \"created_at\": \"2025-07-25T12:56:47.000000Z\"\n    }\n}"
-				}
-			]
-		},
-		{
-			"name": "Favorite",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "{{token}}",
-							"type": "string"
-						}
-					]
-				},
-				"method": "GET",
-				"header": [
-					{
-						"key": "Accept",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"url": {
-					"raw": "localhost:8000/api/getFavorites",
-					"host": [
-						"localhost"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"getFavorites"
-					]
-				}
-			},
-			"response": [
-				{
-					"name": "success add to favorite",
-					"originalRequest": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "localhost:8000/api/addFavorite/2",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"api",
-								"addFavorite",
-								"2"
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
 					"_postman_previewlanguage": null,
 					"header": [
 						{
@@ -1258,7 +1162,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Fri, 01 Aug 2025 13:45:08 GMT"
+							"value": "Fri, 08 Aug 2025 11:14:42 GMT"
 						},
 						{
 							"key": "Content-Type",
@@ -1270,126 +1174,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"message\": \"book added to favorite successfully\",\n    \"favorite\": {\n        \"user_id\": 1,\n        \"book_id\": \"2\",\n        \"updated_at\": \"2025-08-01T13:45:08.000000Z\",\n        \"created_at\": \"2025-08-01T13:45:08.000000Z\",\n        \"id\": 2\n    }\n}"
-				},
-				{
-					"name": "remove from favorite",
-					"originalRequest": {
-						"method": "DELETE",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "localhost:8000/api/removeFavorite/2",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"api",
-								"removeFavorite",
-								"2"
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": null,
-					"header": [
-						{
-							"key": "Host",
-							"value": "localhost:8000"
-						},
-						{
-							"key": "Connection",
-							"value": "close"
-						},
-						{
-							"key": "X-Powered-By",
-							"value": "PHP/8.2.12"
-						},
-						{
-							"key": "Cache-Control",
-							"value": "no-cache, private"
-						},
-						{
-							"key": "Date",
-							"value": "Fri, 01 Aug 2025 13:46:46 GMT"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Access-Control-Allow-Origin",
-							"value": "*"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"message\": \"book removed from favorite successfully\"\n}"
-				},
-				{
-					"name": "get favorities book",
-					"originalRequest": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "localhost:8000/api/getFavorites",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"api",
-								"getFavorites"
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": null,
-					"header": [
-						{
-							"key": "Host",
-							"value": "localhost:8000"
-						},
-						{
-							"key": "Connection",
-							"value": "close"
-						},
-						{
-							"key": "X-Powered-By",
-							"value": "PHP/8.2.12"
-						},
-						{
-							"key": "Cache-Control",
-							"value": "no-cache, private"
-						},
-						{
-							"key": "Date",
-							"value": "Fri, 01 Aug 2025 13:54:19 GMT"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Access-Control-Allow-Origin",
-							"value": "*"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"favorites\": [\n        {\n            \"id\": 1,\n            \"title\": \"So That My Heart May Find Peace\",\n            \"image\": \"storage/img/books/book1.jpg\",\n            \"description\": \"A philosophical and emotional narrative where a man's journey leads him to spiritual insight through conversations with a stranger. The novel gently explores pain, doubt, and belief with poetic depth.\",\n            \"is paid\": 0,\n            \"price\": null,\n            \"author_id\": 1,\n            \"section_id\": 4,\n            \"file_url\": \"https://archive.org/download/arabicnovels00045/Arabic-Novels-00045.pdf\",\n            \"created_at\": \"2025-08-01T13:28:35.000000Z\",\n            \"updated_at\": \"2025-08-01T13:28:35.000000Z\",\n            \"pivot\": {\n                \"user_id\": 1,\n                \"book_id\": 1\n            }\n        },\n        {\n            \"id\": 21,\n            \"title\": \"I, Robot\",\n            \"image\": \"storage/img/books/book21.jpg\",\n            \"description\": \"A series of science fiction stories exploring artificial intelligence and ethics, famously introducing the Three Laws of Robotics.\",\n            \"is paid\": 1,\n            \"price\": 100,\n            \"author_id\": null,\n            \"section_id\": 5,\n            \"file_url\": \"https://down.ketabpedia.com/files/bnr/bnr10255-1.pdf\",\n            \"created_at\": \"2025-08-01T13:28:35.000000Z\",\n            \"updated_at\": \"2025-08-01T13:28:35.000000Z\",\n            \"pivot\": {\n                \"user_id\": 1,\n                \"book_id\": 21\n            }\n        }\n    ]\n}"
+					"body": "{\n    \"data\": {\n        \"id\": 10,\n        \"title\": \"Jasmine of Return\",\n        \"description\": \"A continuation of the jasmine-themed narrative, this novel explores identity, exile, and emotional return in the face of cultural and personal struggle.\",\n        \"is_paid\": null,\n        \"is_favorite\": 1,\n        \"price\": 165,\n        \"author_id\": 6,\n        \"section_id\": 1,\n        \"image\": \"storage/img/books/book10.jpg\",\n        \"image_url\": \"http://localhost:8000/storage/img/books/book10.jpg\",\n        \"file_url\": \"https://book-shadow.com/files/fhrst11/571.pdf\",\n        \"created_at\": \"2025-08-08T11:10:30.000000Z\"\n    }\n}"
 				}
 			]
 		},
@@ -1401,7 +1186,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "{{token}}",
+							"value": "{{t}}",
 							"type": "string"
 						}
 					]
@@ -1738,11 +1523,242 @@
 					"body": "{\n    \"books\": [],\n    \"authors\": [],\n    \"section\": []\n}"
 				}
 			]
+		},
+		{
+			"name": "add favorite",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{t}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/addFavorite/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"addFavorite",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "remove from favorite",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{t}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/removeFavorite/12",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"removeFavorite",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get favorite books",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{t}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/getFavorites",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"getFavorites"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "no favorites yet",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/getFavorites",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"getFavorites"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 04 Aug 2025 06:37:20 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"no favorites yet\"\n}"
+				},
+				{
+					"name": "success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/getFavorites",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"getFavorites"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 08 Aug 2025 11:12:51 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"favorites\": [\n        {\n            \"id\": 1,\n            \"title\": \"So That My Heart May Find Peace\",\n            \"image\": \"storage/img/books/book1.jpg\",\n            \"description\": \"A philosophical and emotional narrative where a man's journey leads him to spiritual insight through conversations with a stranger. The novel gently explores pain, doubt, and belief with poetic depth.\",\n            \"is paid\": 0,\n            \"is_favorite\": 1,\n            \"price\": null,\n            \"author_id\": 1,\n            \"section_id\": 4,\n            \"file_url\": \"https://archive.org/download/arabicnovels00045/Arabic-Novels-00045.pdf\",\n            \"created_at\": \"2025-08-08T11:10:30.000000Z\",\n            \"updated_at\": \"2025-08-08T11:12:07.000000Z\",\n            \"pivot\": {\n                \"user_id\": 1,\n                \"book_id\": 1\n            }\n        },\n        {\n            \"id\": 10,\n            \"title\": \"Jasmine of Return\",\n            \"image\": \"storage/img/books/book10.jpg\",\n            \"description\": \"A continuation of the jasmine-themed narrative, this novel explores identity, exile, and emotional return in the face of cultural and personal struggle.\",\n            \"is paid\": 1,\n            \"is_favorite\": 1,\n            \"price\": 165,\n            \"author_id\": 6,\n            \"section_id\": 1,\n            \"file_url\": \"https://book-shadow.com/files/fhrst11/571.pdf\",\n            \"created_at\": \"2025-08-08T11:10:30.000000Z\",\n            \"updated_at\": \"2025-08-08T11:11:33.000000Z\",\n            \"pivot\": {\n                \"user_id\": 1,\n                \"book_id\": 10\n            }\n        },\n        {\n            \"id\": 1,\n            \"title\": \"So That My Heart May Find Peace\",\n            \"image\": \"storage/img/books/book1.jpg\",\n            \"description\": \"A philosophical and emotional narrative where a man's journey leads him to spiritual insight through conversations with a stranger. The novel gently explores pain, doubt, and belief with poetic depth.\",\n            \"is paid\": 0,\n            \"is_favorite\": 1,\n            \"price\": null,\n            \"author_id\": 1,\n            \"section_id\": 4,\n            \"file_url\": \"https://archive.org/download/arabicnovels00045/Arabic-Novels-00045.pdf\",\n            \"created_at\": \"2025-08-08T11:10:30.000000Z\",\n            \"updated_at\": \"2025-08-08T11:12:07.000000Z\",\n            \"pivot\": {\n                \"user_id\": 1,\n                \"book_id\": 1\n            }\n        }\n    ]\n}"
+				}
+			]
 		}
 	],
 	"variable": [
 		{
 			"key": "token",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "tok",
 			"value": "",
 			"type": "default"
 		}

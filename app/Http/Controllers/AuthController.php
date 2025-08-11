@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Wallet;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -27,6 +28,11 @@ class AuthController extends Controller
             'last_name' => $request['last_name'],
             'email' => $request['email'],
             'password' => Hash::make($request['password']),
+        ]);
+
+        Wallet::create([
+            'user_id' => $user->id,
+            'balance' => 0,
         ]);
 
         $code = mt_rand(100000, 999999);

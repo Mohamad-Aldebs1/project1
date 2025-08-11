@@ -980,7 +980,7 @@
 					},
 					"status": "OK",
 					"code": 200,
-					"_postman_previewlanguage": null,
+					"_postman_previewlanguage": "json",
 					"header": [
 						{
 							"key": "Host",
@@ -1004,7 +1004,9 @@
 						},
 						{
 							"key": "Content-Type",
-							"value": "application/json"
+							"value": "application/json",
+							"description": "",
+							"type": "text"
 						},
 						{
 							"key": "Access-Control-Allow-Origin",
@@ -1055,7 +1057,7 @@
 					},
 					"status": "OK",
 					"code": 200,
-					"_postman_previewlanguage": null,
+					"_postman_previewlanguage": "json",
 					"header": [
 						{
 							"key": "Host",
@@ -1079,7 +1081,9 @@
 						},
 						{
 							"key": "Content-Type",
-							"value": "application/json"
+							"value": "application/json",
+							"description": "",
+							"type": "text"
 						},
 						{
 							"key": "Access-Control-Allow-Origin",
@@ -1142,7 +1146,7 @@
 					},
 					"status": "OK",
 					"code": 200,
-					"_postman_previewlanguage": null,
+					"_postman_previewlanguage": "json",
 					"header": [
 						{
 							"key": "Host",
@@ -1166,7 +1170,9 @@
 						},
 						{
 							"key": "Content-Type",
-							"value": "application/json"
+							"value": "application/json",
+							"description": "",
+							"type": "text"
 						},
 						{
 							"key": "Access-Control-Allow-Origin",
@@ -1179,7 +1185,102 @@
 			]
 		},
 		{
-			"name": "profile",
+			"name": "getProfile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{t}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/getProfile",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"getProfile"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/getProfile",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"getProfile"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 11 Aug 2025 19:33:51 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"first_name\": \"Mohamad\",\n    \"last_name\": \"Aldebs\",\n    \"email\": \"mmmsyrm@gmail.com\"\n}"
+				}
+			]
+		},
+		{
+			"name": "updateProfile",
 			"request": {
 				"auth": {
 					"type": "bearer",
@@ -1228,65 +1329,6 @@
 			},
 			"response": [
 				{
-					"name": "get profile",
-					"originalRequest": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "localhost:8000/api/getProfile",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"api",
-								"getProfile"
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": null,
-					"header": [
-						{
-							"key": "Host",
-							"value": "localhost:8000"
-						},
-						{
-							"key": "Connection",
-							"value": "close"
-						},
-						{
-							"key": "X-Powered-By",
-							"value": "PHP/8.2.12"
-						},
-						{
-							"key": "Cache-Control",
-							"value": "no-cache, private"
-						},
-						{
-							"key": "Date",
-							"value": "Fri, 01 Aug 2025 14:41:21 GMT"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Access-Control-Allow-Origin",
-							"value": "*"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"first_name\": \"mohamad\",\n    \"last_name\": \"aldebs\",\n    \"email\": \"mmmsyrm@gmail.com\"\n}"
-				},
-				{
 					"name": "update profile",
 					"originalRequest": {
 						"method": "POST",
@@ -1326,7 +1368,7 @@
 					},
 					"status": "OK",
 					"code": 200,
-					"_postman_previewlanguage": null,
+					"_postman_previewlanguage": "json",
 					"header": [
 						{
 							"key": "Host",
@@ -1350,7 +1392,9 @@
 						},
 						{
 							"key": "Content-Type",
-							"value": "application/json"
+							"value": "application/json",
+							"description": "",
+							"type": "text"
 						},
 						{
 							"key": "Access-Control-Allow-Origin",
@@ -1546,7 +1590,7 @@
 					}
 				],
 				"url": {
-					"raw": "localhost:8000/api/addFavorite/1",
+					"raw": "localhost:8000/api/addFavorite/10",
 					"host": [
 						"localhost"
 					],
@@ -1554,11 +1598,72 @@
 					"path": [
 						"api",
 						"addFavorite",
-						"1"
+						"10"
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/addFavorite/10",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"addFavorite",
+								"10"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 11 Aug 2025 19:36:05 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"book added to favorite successfully\",\n    \"favorite\": {\n        \"user_id\": 1,\n        \"book_id\": \"10\",\n        \"updated_at\": \"2025-08-11T19:36:05.000000Z\",\n        \"created_at\": \"2025-08-11T19:36:05.000000Z\",\n        \"id\": 3\n    }\n}"
+				}
+			]
 		},
 		{
 			"name": "remove from favorite",
@@ -1582,7 +1687,7 @@
 					}
 				],
 				"url": {
-					"raw": "localhost:8000/api/removeFavorite/12",
+					"raw": "localhost:8000/api/removeFavorite/10",
 					"host": [
 						"localhost"
 					],
@@ -1590,11 +1695,72 @@
 					"path": [
 						"api",
 						"removeFavorite",
-						"12"
+						"10"
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "success",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/removeFavorite/10",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"removeFavorite",
+								"10"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 11 Aug 2025 19:36:28 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"book removed from favorite successfully\"\n}"
+				}
+			]
 		},
 		{
 			"name": "get favorite books",
@@ -1747,6 +1913,608 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"favorites\": [\n        {\n            \"id\": 1,\n            \"title\": \"So That My Heart May Find Peace\",\n            \"image\": \"storage/img/books/book1.jpg\",\n            \"description\": \"A philosophical and emotional narrative where a man's journey leads him to spiritual insight through conversations with a stranger. The novel gently explores pain, doubt, and belief with poetic depth.\",\n            \"is paid\": 0,\n            \"is_favorite\": 1,\n            \"price\": null,\n            \"author_id\": 1,\n            \"section_id\": 4,\n            \"file_url\": \"https://archive.org/download/arabicnovels00045/Arabic-Novels-00045.pdf\",\n            \"created_at\": \"2025-08-08T11:10:30.000000Z\",\n            \"updated_at\": \"2025-08-08T11:12:07.000000Z\",\n            \"pivot\": {\n                \"user_id\": 1,\n                \"book_id\": 1\n            }\n        },\n        {\n            \"id\": 10,\n            \"title\": \"Jasmine of Return\",\n            \"image\": \"storage/img/books/book10.jpg\",\n            \"description\": \"A continuation of the jasmine-themed narrative, this novel explores identity, exile, and emotional return in the face of cultural and personal struggle.\",\n            \"is paid\": 1,\n            \"is_favorite\": 1,\n            \"price\": 165,\n            \"author_id\": 6,\n            \"section_id\": 1,\n            \"file_url\": \"https://book-shadow.com/files/fhrst11/571.pdf\",\n            \"created_at\": \"2025-08-08T11:10:30.000000Z\",\n            \"updated_at\": \"2025-08-08T11:11:33.000000Z\",\n            \"pivot\": {\n                \"user_id\": 1,\n                \"book_id\": 10\n            }\n        },\n        {\n            \"id\": 1,\n            \"title\": \"So That My Heart May Find Peace\",\n            \"image\": \"storage/img/books/book1.jpg\",\n            \"description\": \"A philosophical and emotional narrative where a man's journey leads him to spiritual insight through conversations with a stranger. The novel gently explores pain, doubt, and belief with poetic depth.\",\n            \"is paid\": 0,\n            \"is_favorite\": 1,\n            \"price\": null,\n            \"author_id\": 1,\n            \"section_id\": 4,\n            \"file_url\": \"https://archive.org/download/arabicnovels00045/Arabic-Novels-00045.pdf\",\n            \"created_at\": \"2025-08-08T11:10:30.000000Z\",\n            \"updated_at\": \"2025-08-08T11:12:07.000000Z\",\n            \"pivot\": {\n                \"user_id\": 1,\n                \"book_id\": 1\n            }\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "charge",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{t}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "amount",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "stripeToken",
+							"value": "\"tok_visa\"",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/charge",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"charge"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "amount",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "stripeToken",
+									"value": "\"tok_visa\"",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/charge",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"charge"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 11 Aug 2025 17:32:14 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"The balance has been added to your wallet.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "getWallet",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{t}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "localhost:8000/api/getWallet",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"getWallet"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "localhost:8000/api/getWallet",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"getWallet"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 11 Aug 2025 17:35:53 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message1\": \"welcome mohamad\",\n    \"message2\": \"your balance 100$\"\n}"
+				}
+			]
+		},
+		{
+			"name": "buyBook",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{t}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/buyBook/5",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"buyBook",
+						"5"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Insufficient balance",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/buyBook/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"buyBook",
+								"5"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 11 Aug 2025 18:32:15 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"Insufficient balance\"\n}"
+				},
+				{
+					"name": "success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/buyBook/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"buyBook",
+								"5"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 11 Aug 2025 18:33:12 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"The book was purchased successfully\"\n}"
+				},
+				{
+					"name": "You already own this book",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/buyBook/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"buyBook",
+								"5"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 11 Aug 2025 18:33:56 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"You already own this book.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "PurchasedBooks",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{t}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/getPurchasedBooks",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"getPurchasedBooks"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/getPurchasedBooks",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"getPurchasedBooks"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 11 Aug 2025 19:19:39 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"purchase_date\": \"2025-08-11 18:33:12\",\n        \"book\": {\n            \"id\": 5,\n            \"title\": \"Endless Night\",\n            \"description\": \"A psychological crime novel where a charming young man marries a wealthy heiress, only to reveal dark motives beneath a romantic façade. Twists unfold as love, greed, and guilt collide in a haunting countryside estate.\",\n            \"is_paid\": 1,\n            \"is_favorite\": 0,\n            \"price\": 150,\n            \"author_id\": 2,\n            \"section_id\": 3,\n            \"image\": \"storage/img/books/book5.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book5.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bm4u/1PtO26CeJBdwvqwJN6__5F7jzZ4WuAJbr.pdf\",\n            \"created_at\": \"2025-08-11T18:31:23.000000Z\"\n        }\n    },\n    {\n        \"purchase_date\": \"2025-08-11 19:15:42\",\n        \"book\": {\n            \"id\": 9,\n            \"title\": \"White Nights\",\n            \"description\": \"A short romantic tale about a lonely dreamer who falls in love over four nights with a woman waiting for another, exploring longing and emotional isolation.\",\n            \"is_paid\": 1,\n            \"is_favorite\": 0,\n            \"price\": 170,\n            \"author_id\": 5,\n            \"section_id\": 2,\n            \"image\": \"storage/img/books/book9.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book9.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bm4u/1cRs_aXf_XCBvHRBA2bDHF2t0Gb3zWLNF.pdf \",\n            \"created_at\": \"2025-08-11T18:31:23.000000Z\"\n        }\n    }\n]"
+				},
+				{
+					"name": "No books available",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/getPurchasedBooks",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"getPurchasedBooks"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 11 Aug 2025 19:22:26 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"No books available\"\n}"
 				}
 			]
 		}

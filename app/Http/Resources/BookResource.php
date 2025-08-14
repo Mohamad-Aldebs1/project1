@@ -25,7 +25,7 @@ class BookResource extends JsonResource
             'section_id' => $this->section_id,
             'image' => $this->image,
             'image_url' => asset($this->image),
-            'file_url' => asset($this->file_url),
+            'file_url' => $this->file_url,
             'created_at' => $this->created_at,
         ];
     }

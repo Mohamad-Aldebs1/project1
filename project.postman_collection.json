@@ -8,6 +8,2415 @@
 	},
 	"item": [
 		{
+			"name": "Dashboard",
+			"item": [
+				{
+					"name": "getBook",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{t}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/books/20",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"books",
+								"20"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/books/20",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"books",
+										"20"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 Aug 2025 23:46:19 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": 20,\n        \"title\": \"Appointment with Death\",\n        \"description\": \"Hercule Poirot investigates a murder in Petra where a tyrannical matriarch’s death uncovers layers of family secrets and motives.\",\n        \"is_paid\": 1,\n        \"is_favorite\": 0,\n        \"price\": 145,\n        \"author_id\": 2,\n        \"section_id\": 2,\n        \"image\": \"storage/img/books/book20.jpg\",\n        \"image_url\": \"http://localhost:8000/storage/img/books/book20.jpg\",\n        \"file_url\": \"https://down.ketabpedia.com/files/bnr/bnr6920-1.pdf\",\n        \"created_at\": \"2025-08-14T23:39:43.000000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "getAllBooks",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{t}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/books",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"books"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/books",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"books"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 Aug 2025 23:41:06 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"title\": \"So That My Heart May Find Peace\",\n            \"description\": \"A philosophical and emotional narrative where a man's journey leads him to spiritual insight through conversations with a stranger. The novel gently explores pain, doubt, and belief with poetic depth.\",\n            \"is_paid\": 0,\n            \"is_favorite\": 0,\n            \"price\": null,\n            \"author_id\": 1,\n            \"section_id\": 4,\n            \"image\": \"storage/img/books/book1.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book1.jpg\",\n            \"file_url\": \"https://archive.org/download/arabicnovels00045/Arabic-Novels-00045.pdf\",\n            \"created_at\": \"2025-08-14T23:39:43.000000Z\"\n        },\n        {\n            \"id\": 2,\n            \"title\": \"The Jasmine's Exile\",\n            \"description\": \"A young Tunisian woman moves to France for her studies and faces cultural alienation, religious prejudice, and identity conflict. The novel explores the emotional and social struggles of Muslim immigrants in Western societies.\",\n            \"is_paid\": 0,\n            \"is_favorite\": 0,\n            \"price\": null,\n            \"author_id\": 6,\n            \"section_id\": 1,\n            \"image\": \"storage/img/books/book2.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book2.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bm4u/0B3qzqlRcP02YUGptQkpDVVpBWWc.pdf\",\n            \"created_at\": \"2025-08-14T23:39:43.000000Z\"\n        },\n        {\n            \"id\": 3,\n            \"title\": \"The Spy\",\n            \"description\": \"A fictionalized account of Mata Hari, the infamous dancer turned spy during World War I. The novel explores her final days, revealing a woman misunderstood by history and condemned for her allure and independence.\",\n            \"is_paid\": 0,\n            \"is_favorite\": 0,\n            \"price\": null,\n            \"author_id\": 7,\n            \"section_id\": 2,\n            \"image\": \"storage/img/books/book3.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book3.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bnr/bnr2156-1.pdf\",\n            \"created_at\": \"2025-08-14T23:39:43.000000Z\"\n        },\n        {\n            \"id\": 4,\n            \"title\": \"The Murder on the Links\",\n            \"description\": \"Hercule Poirot is summoned to France only to find his client murdered and buried on a golf course. With twists, disguises, and a second corpse, Poirot must untangle a web of secrets from the past to reveal the killer.\",\n            \"is_paid\": 0,\n            \"is_favorite\": 0,\n            \"price\": null,\n            \"author_id\": 2,\n            \"section_id\": 3,\n            \"image\": \"storage/img/books/book4.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book4.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bm4u/1S7_Y2CHwnfGgj93M2FNfZdPFdreU_GDz.pdf\",\n            \"created_at\": \"2025-08-14T23:39:43.000000Z\"\n        },\n        {\n            \"id\": 5,\n            \"title\": \"Endless Night\",\n            \"description\": \"A psychological crime novel where a charming young man marries a wealthy heiress, only to reveal dark motives beneath a romantic façade. Twists unfold as love, greed, and guilt collide in a haunting countryside estate.\",\n            \"is_paid\": 1,\n            \"is_favorite\": 0,\n            \"price\": 150,\n            \"author_id\": 2,\n            \"section_id\": 3,\n            \"image\": \"storage/img/books/book5.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book5.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bm4u/1PtO26CeJBdwvqwJN6__5F7jzZ4WuAJbr.pdf\",\n            \"created_at\": \"2025-08-14T23:39:43.000000Z\"\n        },\n        {\n            \"id\": 6,\n            \"title\": \"Arsses\",\n            \"description\": \"A Saudi sci-fi adventure where a team of scientists investigates a mysterious object in the sky, only to discover a portal to another world. The novel blends space exploration, alien encounters, and psychological tension.\",\n            \"is_paid\": 0,\n            \"is_favorite\": 0,\n            \"price\": null,\n            \"author_id\": 3,\n            \"section_id\": 5,\n            \"image\": \"storage/img/books/book6.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book6.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/ind/arsis-dad.pdf\",\n            \"created_at\": \"2025-08-14T23:39:43.000000Z\"\n        },\n        {\n            \"id\": 7,\n            \"title\": \"Al-Sajil\",\n            \"description\": \"A fantasy thriller and the fourth part of the “Clay and Fire” saga, where secrets from the Barzakh threaten to reshape Earth’s history. The story follows Asif as he faces mysterious forces and a revelation that could alter fate itself.\",\n            \"is_paid\": 1,\n            \"is_favorite\": 0,\n            \"price\": 120,\n            \"author_id\": 3,\n            \"section_id\": 2,\n            \"image\": \"storage/img/books/book7.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book7.jpg\",\n            \"file_url\": \"https://ketabpedia.com/wp-content/uploads/2024/07/sejjil.pdf\",\n            \"created_at\": \"2025-08-14T23:39:43.000000Z\"\n        },\n        {\n            \"id\": 8,\n            \"title\": \"The Diary of a Writer\",\n            \"description\": \"A collection of essays and reflections where Dostoevsky explores political, religious, and social themes through personal commentary and philosophical depth\",\n            \"is_paid\": 0,\n            \"is_favorite\": 0,\n            \"price\": null,\n            \"author_id\": 5,\n            \"section_id\": 1,\n            \"image\": \"storage/img/books/book8.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book8.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bm4u/1TyeFh4kx8AARtibyfckZt-7gMKx8Tgwa.pdf\",\n            \"created_at\": \"2025-08-14T23:39:43.000000Z\"\n        },\n        {\n            \"id\": 9,\n            \"title\": \"White Nights\",\n            \"description\": \"A short romantic tale about a lonely dreamer who falls in love over four nights with a woman waiting for another, exploring longing and emotional isolation.\",\n            \"is_paid\": 1,\n            \"is_favorite\": 0,\n            \"price\": 170,\n            \"author_id\": 5,\n            \"section_id\": 2,\n            \"image\": \"storage/img/books/book9.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book9.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bm4u/1cRs_aXf_XCBvHRBA2bDHF2t0Gb3zWLNF.pdf \",\n            \"created_at\": \"2025-08-14T23:39:43.000000Z\"\n        },\n        {\n            \"id\": 10,\n            \"title\": \"Jasmine of Return\",\n            \"description\": \"A continuation of the jasmine-themed narrative, this novel explores identity, exile, and emotional return in the face of cultural and personal struggle.\",\n            \"is_paid\": 1,\n            \"is_favorite\": 0,\n            \"price\": 165,\n            \"author_id\": 6,\n            \"section_id\": 1,\n            \"image\": \"storage/img/books/book10.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book10.jpg\",\n            \"file_url\": \"https://book-shadow.com/files/fhrst11/571.pdf\",\n            \"created_at\": \"2025-08-14T23:39:43.000000Z\"\n        },\n        {\n            \"id\": 11,\n            \"title\": \"In My Heart Lives a Hebrew Woman\",\n            \"description\": \"Based on a true story, it follows a Jewish girl’s journey toward Islam and resistance in southern Lebanon, tackling themes of tolerance and belief.\",\n            \"is_paid\": 1,\n            \"is_favorite\": 0,\n            \"price\": 90,\n            \"author_id\": 6,\n            \"section_id\": 1,\n            \"image\": \"storage/img/books/book11.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book11.jpg\",\n            \"file_url\": \"https://ketabpedia.com/wp-content/uploads/2019/01/%D9%81%D9%8A-%D9%82%D9%84%D8%A8%D9%8A-%D8%A3%D9%86%D8%AB%D9%89-%D8%B9%D8%A8%D8%B1%D9%8A%D8%A9_%D8%AE%D9%88%D9%84%D8%A9-%D8%AD%D9%85%D8%AF%D9%8A.pdf\",\n            \"created_at\": \"2025-08-14T23:39:43.000000Z\"\n        },\n        {\n            \"id\": 12,\n            \"title\": \"Outlaw Scribbles\",\n            \"description\": \"A collection of socially charged thoughts and poetic reflections challenging conventional norms and provoking introspective dialogue.\",\n            \"is_paid\": 1,\n            \"is_favorite\": 0,\n            \"price\": 125,\n            \"author_id\": 1,\n            \"section_id\": 1,\n            \"image\": \"storage/img/books/book12.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book12.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bnr/bnr779-1.pdf\",\n            \"created_at\": \"2025-08-14T23:39:43.000000Z\"\n        },\n        {\n            \"id\": 13,\n            \"title\": \"Letters from the Qur’an\",\n            \"description\": \"Spiritual letters inspired by Qur’anic themes, offering heartfelt reflections on faith, humanity, and everyday struggles with lyrical sensitivity.\",\n            \"is_paid\": 1,\n            \"is_favorite\": 0,\n            \"price\": 140,\n            \"author_id\": 1,\n            \"section_id\": 4,\n            \"image\": \"storage/img/books/book13.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book13.jpg\",\n            \"file_url\": \"https://ketabpedia.com/wp-content/uploads/2024/07/rasaailquranadham.pdf\",\n            \"created_at\": \"2025-08-14T23:39:43.000000Z\"\n        },\n        {\n            \"id\": 14,\n            \"title\": \"Pulse\",\n            \"description\": \"A romantic and philosophical tale where emotions are tested by war, faith, and self-discovery, layered with poetic introspection.\",\n            \"is_paid\": 1,\n            \"is_favorite\": 0,\n            \"price\": 200,\n            \"author_id\": 1,\n            \"section_id\": 2,\n            \"image\": \"storage/img/books/book14.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book14.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bm4u/0B3qzqlRcP02Ycl9raDJmTGR5RVk.pdf\",\n            \"created_at\": \"2025-08-14T23:39:43.000000Z\"\n        },\n        {\n            \"id\": 15,\n            \"title\": \"The Not-Impossible Mission\",\n            \"description\": \"A motivational book that merges spiritual purpose with social insight, aiming to inspire meaningful change despite seemingly impossible odds.\",\n            \"is_paid\": 1,\n            \"is_favorite\": 0,\n            \"price\": 115,\n            \"author_id\": 4,\n            \"section_id\": 4,\n            \"image\": \"storage/img/books/book15.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book15.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bm4u/1gM-y27YRaL1y9gpSnvXaZ42Se3NcVCfO.pdf\",\n            \"created_at\": \"2025-08-14T23:39:43.000000Z\"\n        },\n        {\n            \"id\": 16,\n            \"title\": \"Crime and Punishment\",\n            \"description\": \"A psychological masterpiece exploring guilt, redemption, and morality through the mind of a young man who commits murder in search of justice.\",\n            \"is_paid\": 1,\n            \"is_favorite\": 0,\n            \"price\": 185,\n            \"author_id\": 5,\n            \"section_id\": 2,\n            \"image\": \"storage/img/books/book16.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book16.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bm4u/1xQPFptXGxo5_H-uDxO_hwxOsoT-YiP8r.pdf\",\n            \"created_at\": \"2025-08-14T23:39:43.000000Z\"\n        },\n        {\n            \"id\": 17,\n            \"title\": \"The Gambler\",\n            \"description\": \"A semi-autobiographical novel centered on a man consumed by gambling addiction, personal pride, and a doomed romance.\",\n            \"is_paid\": 1,\n            \"is_favorite\": 0,\n            \"price\": 150,\n            \"author_id\": 5,\n            \"section_id\": 2,\n            \"image\": \"storage/img/books/book17.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book17.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bm4u/0ByC7-1_go92DTHhsSFJjS01LbnM.pdf\",\n            \"created_at\": \"2025-08-14T23:39:43.000000Z\"\n        },\n        {\n            \"id\": 18,\n            \"title\": \"The Power of Letting Go\",\n            \"description\": \"A transformative self-help guide encouraging emotional release, healing, and inner peace through acceptance and mindfulness.\",\n            \"is_paid\": 1,\n            \"is_favorite\": 0,\n            \"price\": 140,\n            \"author_id\": null,\n            \"section_id\": 6,\n            \"image\": \"storage/img/books/book18.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book18.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bnr/bnr3122-1.pdf\",\n            \"created_at\": \"2025-08-14T23:39:43.000000Z\"\n        },\n        {\n            \"id\": 19,\n            \"title\": \"The Pistachio Theory\",\n            \"description\": \"A popular Arabic self-development book that uses storytelling and metaphor to explore human behavior, decision-making, and mental clarity.\",\n            \"is_paid\": 1,\n            \"is_favorite\": 0,\n            \"price\": 210,\n            \"author_id\": null,\n            \"section_id\": 6,\n            \"image\": \"storage/img/books/book19.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book19.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bm4u/1bXu4mdq-WrQvd6soCWwgMYs-ZLQGwBkJ.pdf\",\n            \"created_at\": \"2025-08-14T23:39:43.000000Z\"\n        },\n        {\n            \"id\": 20,\n            \"title\": \"Appointment with Death\",\n            \"description\": \"Hercule Poirot investigates a murder in Petra where a tyrannical matriarch’s death uncovers layers of family secrets and motives.\",\n            \"is_paid\": 1,\n            \"is_favorite\": 0,\n            \"price\": 145,\n            \"author_id\": 2,\n            \"section_id\": 2,\n            \"image\": \"storage/img/books/book20.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book20.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bnr/bnr6920-1.pdf\",\n            \"created_at\": \"2025-08-14T23:39:43.000000Z\"\n        },\n        {\n            \"id\": 21,\n            \"title\": \"I, Robot\",\n            \"description\": \"A series of science fiction stories exploring artificial intelligence and ethics, famously introducing the Three Laws of Robotics.\",\n            \"is_paid\": 1,\n            \"is_favorite\": 0,\n            \"price\": 100,\n            \"author_id\": null,\n            \"section_id\": 5,\n            \"image\": \"storage/img/books/book21.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book21.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bnr/bnr10255-1.pdf\",\n            \"created_at\": \"2025-08-14T23:39:43.000000Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "createBook",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{t}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "ITE",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "ite books",
+									"type": "text"
+								},
+								{
+									"key": "is_paid",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "author_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "section_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Mohamad Aldebs/Desktop/test.jpg"
+								},
+								{
+									"key": "file_url",
+									"value": "asssssss",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/books",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"books"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "addFreeBook",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "ITE",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "ite book",
+											"type": "text"
+										},
+										{
+											"key": "is_paid",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "author_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "section_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/Mohamad Aldebs/Desktop/test.jpg"
+										},
+										{
+											"key": "file_url",
+											"value": "no link",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/books",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"books"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 Aug 2025 23:42:20 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Book created successfully.\",\n    \"data\": {\n        \"id\": 22,\n        \"title\": \"ITE\",\n        \"description\": \"ite book\",\n        \"is_paid\": \"0\",\n        \"is_favorite\": null,\n        \"price\": null,\n        \"author_id\": \"1\",\n        \"section_id\": \"1\",\n        \"image\": \"http://localhost:8000/storage/img/books/s2iwhYaOn09FVho8hi4MOfSpiQoJwCLN5AR3NOYu.jpg\",\n        \"image_url\": \"http://localhost:8000/storage/img/books/s2iwhYaOn09FVho8hi4MOfSpiQoJwCLN5AR3NOYu.jpg\",\n        \"file_url\": \"no link\",\n        \"created_at\": \"2025-08-14T23:42:20.000000Z\"\n    }\n}"
+						},
+						{
+							"name": "createPaidBook",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "ITE extra",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "ite book paid",
+											"type": "text"
+										},
+										{
+											"key": "is_paid",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "author_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "section_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/Mohamad Aldebs/Desktop/test.jpg"
+										},
+										{
+											"key": "file_url",
+											"value": "no link",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "120",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/books",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"books"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 Aug 2025 23:43:19 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Book created successfully.\",\n    \"data\": {\n        \"id\": 23,\n        \"title\": \"ITE extra\",\n        \"description\": \"ite book paid\",\n        \"is_paid\": \"1\",\n        \"is_favorite\": null,\n        \"price\": \"120\",\n        \"author_id\": \"1\",\n        \"section_id\": \"1\",\n        \"image\": \"http://localhost:8000/storage/img/books/DvwwuzQ2QCu2IZc4vjamWvd8hiQIRtRrwZdwq3Sj.jpg\",\n        \"image_url\": \"http://localhost:8000/storage/img/books/DvwwuzQ2QCu2IZc4vjamWvd8hiQIRtRrwZdwq3Sj.jpg\",\n        \"file_url\": \"no link\",\n        \"created_at\": \"2025-08-14T23:43:19.000000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "updateBook",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{t}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Mohamad Aldebs/Desktop/erd.png"
+								},
+								{
+									"key": "file_url",
+									"value": "link",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/books/22",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"books",
+								"22"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/Mohamad Aldebs/Desktop/erd.png"
+										},
+										{
+											"key": "file_url",
+											"value": "link",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/books/22",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"books",
+										"22"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 Aug 2025 23:44:55 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Book updated successfully.\",\n    \"data\": {\n        \"id\": 22,\n        \"title\": \"ITE\",\n        \"description\": \"ite book\",\n        \"is_paid\": 0,\n        \"is_favorite\": 0,\n        \"price\": null,\n        \"author_id\": 1,\n        \"section_id\": 1,\n        \"image\": \"http://localhost:8000/storage/img/books/OQuHAxx0qtpGqta8yxIx4gPfzGMKSG8W0zpmLB2K.png\",\n        \"image_url\": \"http://localhost:8000/storage/img/books/OQuHAxx0qtpGqta8yxIx4gPfzGMKSG8W0zpmLB2K.png\",\n        \"file_url\": \"link\",\n        \"created_at\": \"2025-08-14T23:42:20.000000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "deleteBook",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{t}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/books/23",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"books",
+								"23"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/books/23",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"books",
+										"23"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 Aug 2025 23:45:19 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Book deleted successfully.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "addAuthor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{t}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "saeed",
+									"type": "text"
+								},
+								{
+									"key": "about",
+									"value": "waleed",
+									"type": "text"
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/C:/Users/Mohamad Aldebs/Desktop/test.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/authors",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"authors"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "saeed",
+											"type": "text"
+										},
+										{
+											"key": "about",
+											"value": "waleed",
+											"type": "text"
+										},
+										{
+											"key": "photo",
+											"type": "file",
+											"src": "/C:/Users/Mohamad Aldebs/Desktop/test.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/authors",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"authors"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 Aug 2025 23:46:32 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Author created successfully.\",\n    \"data\": {\n        \"id\": 8,\n        \"name\": \"saeed\",\n        \"about\": \"waleed\",\n        \"photo\": \"http://localhost:8000/storage/img/lANz6QEyvlvcuq5i4Y1Et6W2fvfgTK7vUH5Q7nBd.jpg\",\n        \"photo_url\": \"http://localhost:8000/storage/img/lANz6QEyvlvcuq5i4Y1Et6W2fvfgTK7vUH5Q7nBd.jpg\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "updateAuthor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{t}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "aaaaaaaa",
+									"type": "text"
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/C:/Users/Mohamad Aldebs/Desktop/img/AhmedAl-Omari.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/authors/8",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"authors",
+								"8"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "aaaaaaaa",
+											"type": "text"
+										},
+										{
+											"key": "photo",
+											"type": "file",
+											"src": "/C:/Users/Mohamad Aldebs/Desktop/img/AhmedAl-Omari.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/authors/8",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"authors",
+										"8"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 Aug 2025 23:47:31 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Author updated successfully.\",\n    \"data\": {\n        \"id\": 8,\n        \"name\": \"aaaaaaaa\",\n        \"about\": \"waleed\",\n        \"photo\": \"http://localhost:8000/storage/img/N7H7UAlS2To9Fj8yjbcTmP7pJH4Xfjw9TLNJbhHY.jpg\",\n        \"photo_url\": \"http://localhost:8000/storage/img/N7H7UAlS2To9Fj8yjbcTmP7pJH4Xfjw9TLNJbhHY.jpg\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "deleteAutho",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{t}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/authors/8",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"authors",
+								"8"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/authors/8",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"authors",
+										"8"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 Aug 2025 23:47:52 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Author deleted successfully.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "getAllAuthors",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{t}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/authors",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"authors"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/authors",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"authors"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 Aug 2025 23:48:08 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Adham Sharkawi\",\n            \"about\": \"Adham Sharkawi is a Palestinian writer born in 1980 in Tyre, Lebanon. He holds a diploma in Physical Education and both a BA and MA in Arabic Literature from the Lebanese University in Beirut. He began his writing career on the online forum \\\"Al-Sakher\\\" and published his first book, Morning Talk, in 2012. He is known for his storytelling style and writes under the pseudonym Quss Ibn Sa‘idah. His works, such as Messages from the Qur’an and With the Prophet, are widely read across the Arab world, especially among youth\",\n            \"photo\": \"storage/img/AdhamSharkawi.jpg\",\n            \"photo_url\": \"http://localhost:8000/storage/img/AdhamSharkawi.jpg\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Agatha Christie\",\n            \"about\": \"Agatha Christie (1890–1976) was a British novelist and playwright, widely regarded as the Queen of Crime. She is best known for her 66 detective novels and 14 short story collections, featuring iconic characters like Hercule Poirot and Miss Marple. Her most famous works include Murder on the Orient Express, And Then There Were None, and The Murder of Roger Ackroyd.\\n                      Christie’s books have sold over two billion copies, making her the best-selling fiction writer of all time, surpassed only by the Bible and Shakespeare. She also wrote the world’s longest-running play, The Mousetrap, which debuted in 1952 and ran continuously in London’s West End for decades.\\n                      She served as a nurse and pharmacy assistant during World War I, which gave her deep knowledge of poisons—something she used cleverly in her plots. In 1971, she was honored as a Dame Commander of the British Empire for her contribution to literature.\",\n            \"photo\": \"storage/img/AgathaChristie.jpg\",\n            \"photo_url\": \"http://localhost:8000/storage/img/AgathaChristie.jpg\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Ahmed Al Hamdan\",\n            \"about\": \"Ahmed Al Hamdan is a Saudi novelist born on June 14, 1992, in Jeddah, Saudi Arabia. He holds a bachelors degree in mathematics from King Abdulaziz University. He began his literary career in 2017 with the novel The City of Love Is Not Inhabited by the Sane, which gained wide popularity for its emotional depth and unique storytelling.\\n                      He is known for blending romance, fantasy, and philosophical themes in his writing\",\n            \"photo\": \"storage/img/AhmedAlHamdan.jpg\",\n            \"photo_url\": \"http://localhost:8000/storage/img/AhmedAlHamdan.jpg\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Ahmed Al-Omari\",\n            \"about\": \"Ahmed Khairy Al-Omari is an Iraqi writer and dentist, born in Baghdad in 1970. Though trained in dentistry, he is best known for his influential Islamic writings that blend spiritual reflection with modern thought. His works often focus on cultural revival, personal development, and reinterpreting Islamic concepts in a contemporary context. Among his most popular books are The Quranic Compass, When the Prophet Speaks, Bilal’s Code, and the Chemistry of Prayer series. His writing style is known for being accessible, thought-provoking, and especially appealing to younger readers across the Arab world.\",\n            \"photo\": \"storage/img/AhmedAl-Omari.jpg\",\n            \"photo_url\": \"http://localhost:8000/storage/img/AhmedAl-Omari.jpg\"\n        },\n        {\n            \"id\": 5,\n            \"name\": \"Dostoevsky\",\n            \"about\": \"Fyodor Dostoevsky (1821–1881) was a Russian novelist, philosopher, and journalist, widely regarded as one of the greatest literary minds in history. His works explore deep psychological, moral, and existential themes, often delving into the human soul’s darkest corners.\\n                      Dostoevsky’s life was marked by hardship: he was imprisoned in Siberia for political activity, suffered from epilepsy, and struggled with gambling addiction. Yet, these experiences deeply shaped his writing, giving it unmatched emotional and philosophical depth.\",\n            \"photo\": \"storage/img/Dostoevsky.jpg\",\n            \"photo_url\": \"http://localhost:8000/storage/img/Dostoevsky.jpg\"\n        },\n        {\n            \"id\": 6,\n            \"name\": \"Khawla Hamdi\",\n            \"about\": \"Khawla Hamdi is a Tunisian novelist and university professor, born on July 12, 1984, in Tunis. She holds a PhD in Operations Research from the University of Technology of Troyes in France. In addition to her academic career, she teaches Information Technology at King Saud University in Riyadh.\\n                       She is best known for her bestselling novel In My Heart a Hebrew Girl (Fi Qalbi Untha ‘Ibriah), which is inspired by a true story of a Jewish Tunisian girl who converts to Islam. Her novels often explore themes of identity, faith, cultural conflict, and the struggles of Muslims in Western societies. Other notable works include Ghurbat al-Yasmin (The Jasmine Exile), An Tabqa (To Stay), and Arni Andhur Ilayk (Let Me Look at You).\\n                       Her writing style blends emotional storytelling with social and spiritual reflection, making her a prominent voice in contemporary Arabic literature.\",\n            \"photo\": \"storage/img/KhawlaHamdi.jpg\",\n            \"photo_url\": \"http://localhost:8000/storage/img/KhawlaHamdi.jpg\"\n        },\n        {\n            \"id\": 7,\n            \"name\": \"Paulo Coelho\",\n            \"about\": \"Paulo Coelho is a Brazilian novelist and lyricist, born on August 24, 1947, in Rio de Janeiro. He is best known for his internationally acclaimed novel The Alchemist, which has sold over 150 million copies and has been translated into more than 80 languages. Before becoming a full-time writer, Coelho worked as a songwriter, theater director, and journalist.\\n                        His writing blends spirituality, philosophy, and personal growth, often using allegorical storytelling. Many of his novels explore themes like destiny, faith, and the pursuit of one’s dreams. Other notable works include Brida, Veronika Decides to Die, Eleven Minutes, The Zahir, and The Valkyries.\\n                        Coelho’s personal journey—from rebellion and institutionalization in his youth to spiritual awakening during a pilgrimage to Santiago de Compostela—deeply influences his literary voice. He is also a UN Messenger of Peace and a member of the Brazilian Academy of Letters.\",\n            \"photo\": \"storage/img/PauloCoelho.jpg\",\n            \"photo_url\": \"http://localhost:8000/storage/img/PauloCoelho.jpg\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "getAuthor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{t}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/authors/7",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"authors",
+								"7"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/authors/7",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"authors",
+										"7"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 Aug 2025 23:48:21 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": 7,\n        \"name\": \"Paulo Coelho\",\n        \"about\": \"Paulo Coelho is a Brazilian novelist and lyricist, born on August 24, 1947, in Rio de Janeiro. He is best known for his internationally acclaimed novel The Alchemist, which has sold over 150 million copies and has been translated into more than 80 languages. Before becoming a full-time writer, Coelho worked as a songwriter, theater director, and journalist.\\n                        His writing blends spirituality, philosophy, and personal growth, often using allegorical storytelling. Many of his novels explore themes like destiny, faith, and the pursuit of one’s dreams. Other notable works include Brida, Veronika Decides to Die, Eleven Minutes, The Zahir, and The Valkyries.\\n                        Coelho’s personal journey—from rebellion and institutionalization in his youth to spiritual awakening during a pilgrimage to Santiago de Compostela—deeply influences his literary voice. He is also a UN Messenger of Peace and a member of the Brazilian Academy of Letters.\",\n        \"photo\": \"storage/img/PauloCoelho.jpg\",\n        \"photo_url\": \"http://localhost:8000/storage/img/PauloCoelho.jpg\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "addSection",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{t}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "section",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Mohamad Aldebs/Desktop/test.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/sections",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"sections"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "section",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/Mohamad Aldebs/Desktop/test.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/sections",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"sections"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 Aug 2025 23:48:52 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Section created successfully.\",\n    \"data\": {\n        \"id\": 7,\n        \"name\": \"section\",\n        \"image\": \"http://localhost:8000/storage/img/yUjpSvgKSq4Wa2XyaYvFdULCG7tTBFXxwXDfzDBW.jpg\",\n        \"image_url\": \"http://localhost:8000/storage/img/yUjpSvgKSq4Wa2XyaYvFdULCG7tTBFXxwXDfzDBW.jpg\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "updateSection",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{t}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "7 section",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Mohamad Aldebs/Desktop/img/religious.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/sections/7",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"sections",
+								"7"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "7 section",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/Mohamad Aldebs/Desktop/img/religious.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/sections/7",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"sections",
+										"7"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 Aug 2025 23:49:39 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Section updated successfully.\",\n    \"data\": {\n        \"id\": 7,\n        \"name\": \"7 section\",\n        \"image\": \"http://localhost:8000/storage/img/BgWGu0DyHiqlAHXjHuMGIM1uuwwXFg4B6fQnDddD.jpg\",\n        \"image_url\": \"http://localhost:8000/storage/img/BgWGu0DyHiqlAHXjHuMGIM1uuwwXFg4B6fQnDddD.jpg\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "deleteSection",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{t}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/sections/7",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"sections",
+								"7"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/sections/7",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"sections",
+										"7"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 Aug 2025 23:49:53 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Section deleted successfully.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "getAllSections",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{t}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/sections",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"sections"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/sections",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"sections"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 Aug 2025 23:50:07 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Cultural\",\n            \"image\": \"storage/img/cultural.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/cultural.jpg\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Philosophical\",\n            \"image\": \"storage/img/philosophical.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/philosophical.jpg\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Police\",\n            \"image\": \"storage/img/police.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/police.jpg\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Religious\",\n            \"image\": \"storage/img/religious.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/religious.jpg\"\n        },\n        {\n            \"id\": 5,\n            \"name\": \"Science fiction\",\n            \"image\": \"storage/img/ScienceFiction.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/ScienceFiction.jpg\"\n        },\n        {\n            \"id\": 6,\n            \"name\": \"Scientific\",\n            \"image\": \"storage/img/scientific.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/scientific.jpg\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "getSection",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{t}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/sections/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"sections",
+								"6"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/sections/6",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"sections",
+										"6"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 Aug 2025 23:50:17 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": 6,\n        \"name\": \"Scientific\",\n        \"image\": \"storage/img/scientific.jpg\",\n        \"image_url\": \"http://localhost:8000/storage/img/scientific.jpg\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "createUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{t}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "mohamad",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "aldebs",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "mmmsyrm@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "user",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/users",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "first_name",
+											"value": "mohamad",
+											"type": "text"
+										},
+										{
+											"key": "last_name",
+											"value": "aldebs",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "mmmsyrm@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345678",
+											"type": "text"
+										},
+										{
+											"key": "role",
+											"value": "user",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/users",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"users"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 Aug 2025 23:50:45 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User created successfully.\",\n    \"data\": {\n        \"first_name\": \"mohamad\",\n        \"last_name\": \"aldebs\",\n        \"email\": \"mmmsyrm@gmail.com\",\n        \"role\": \"user\",\n        \"updated_at\": \"2025-08-14T23:50:45.000000Z\",\n        \"created_at\": \"2025-08-14T23:50:45.000000Z\",\n        \"id\": 2\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "updateUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{t}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "Mohamad",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/users/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"users",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "first_name",
+											"value": "Mohamad",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/users/2",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"users",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 Aug 2025 23:51:17 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User updated successfully.\",\n    \"data\": {\n        \"id\": 2,\n        \"first_name\": \"Mohamad\",\n        \"last_name\": \"aldebs\",\n        \"email\": \"mmmsyrm@gmail.com\",\n        \"email_verified_at\": null,\n        \"role\": \"user\",\n        \"created_at\": \"2025-08-14T23:50:45.000000Z\",\n        \"updated_at\": \"2025-08-14T23:51:17.000000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "deleteUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{t}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/users/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"users",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/users/2",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"users",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 Aug 2025 23:52:05 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User deleted successfully.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "getAllUsers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{t}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/users",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/users",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 Aug 2025 23:51:41 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"first_name\": \"admin\",\n            \"last_name\": \"admin\",\n            \"email\": \"admin@gmail.com\",\n            \"email_verified_at\": null,\n            \"role\": \"admin\",\n            \"created_at\": null,\n            \"updated_at\": null\n        },\n        {\n            \"id\": 2,\n            \"first_name\": \"Mohamad\",\n            \"last_name\": \"aldebs\",\n            \"email\": \"mmmsyrm@gmail.com\",\n            \"email_verified_at\": null,\n            \"role\": \"user\",\n            \"created_at\": \"2025-08-14T23:50:45.000000Z\",\n            \"updated_at\": \"2025-08-14T23:51:17.000000Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "getUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{t}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/users/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"users",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/users/2",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"users",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 Aug 2025 23:51:50 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": 2,\n        \"first_name\": \"Mohamad\",\n        \"last_name\": \"aldebs\",\n        \"email\": \"mmmsyrm@gmail.com\",\n        \"email_verified_at\": null,\n        \"role\": \"user\",\n        \"created_at\": \"2025-08-14T23:50:45.000000Z\",\n        \"updated_at\": \"2025-08-14T23:51:17.000000Z\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
 			"name": "register",
 			"request": {
 				"method": "POST",
@@ -2517,6 +4926,22 @@
 					"body": "{\n    \"error\": \"No books available\"\n}"
 				}
 			]
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	],
 	"variable": [

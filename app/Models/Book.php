@@ -10,7 +10,7 @@ class Book extends Model
         'title',
         'image',
         'description',
-        'is paid',
+        'is_paid',
         'price',
         'author_id',
         'section_id',

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\BookResource;
 use App\Models\Book;
 use App\Models\Favorite;
 use App\Models\User;
@@ -46,6 +47,6 @@ class FavoriteController extends Controller
         if($userFavorites->isEmpty()){
             return response()->json(['message' => 'no favorites yet']);
         }
-        return response()->json(['favorites' => $userFavorites]);
+        return response()->json(['favorites' => BookResource::collection($userFavorites) ]);
     }
 }

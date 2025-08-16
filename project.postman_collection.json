@@ -4322,6 +4322,65 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"favorites\": [\n        {\n            \"id\": 1,\n            \"title\": \"So That My Heart May Find Peace\",\n            \"image\": \"storage/img/books/book1.jpg\",\n            \"description\": \"A philosophical and emotional narrative where a man's journey leads him to spiritual insight through conversations with a stranger. The novel gently explores pain, doubt, and belief with poetic depth.\",\n            \"is paid\": 0,\n            \"is_favorite\": 1,\n            \"price\": null,\n            \"author_id\": 1,\n            \"section_id\": 4,\n            \"file_url\": \"https://archive.org/download/arabicnovels00045/Arabic-Novels-00045.pdf\",\n            \"created_at\": \"2025-08-08T11:10:30.000000Z\",\n            \"updated_at\": \"2025-08-08T11:12:07.000000Z\",\n            \"pivot\": {\n                \"user_id\": 1,\n                \"book_id\": 1\n            }\n        },\n        {\n            \"id\": 10,\n            \"title\": \"Jasmine of Return\",\n            \"image\": \"storage/img/books/book10.jpg\",\n            \"description\": \"A continuation of the jasmine-themed narrative, this novel explores identity, exile, and emotional return in the face of cultural and personal struggle.\",\n            \"is paid\": 1,\n            \"is_favorite\": 1,\n            \"price\": 165,\n            \"author_id\": 6,\n            \"section_id\": 1,\n            \"file_url\": \"https://book-shadow.com/files/fhrst11/571.pdf\",\n            \"created_at\": \"2025-08-08T11:10:30.000000Z\",\n            \"updated_at\": \"2025-08-08T11:11:33.000000Z\",\n            \"pivot\": {\n                \"user_id\": 1,\n                \"book_id\": 10\n            }\n        },\n        {\n            \"id\": 1,\n            \"title\": \"So That My Heart May Find Peace\",\n            \"image\": \"storage/img/books/book1.jpg\",\n            \"description\": \"A philosophical and emotional narrative where a man's journey leads him to spiritual insight through conversations with a stranger. The novel gently explores pain, doubt, and belief with poetic depth.\",\n            \"is paid\": 0,\n            \"is_favorite\": 1,\n            \"price\": null,\n            \"author_id\": 1,\n            \"section_id\": 4,\n            \"file_url\": \"https://archive.org/download/arabicnovels00045/Arabic-Novels-00045.pdf\",\n            \"created_at\": \"2025-08-08T11:10:30.000000Z\",\n            \"updated_at\": \"2025-08-08T11:12:07.000000Z\",\n            \"pivot\": {\n                \"user_id\": 1,\n                \"book_id\": 1\n            }\n        }\n    ]\n}"
+				},
+				{
+					"name": "success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/getFavorites",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"getFavorites"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 16 Aug 2025 10:06:06 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"favorites\": [\n        {\n            \"id\": 21,\n            \"title\": \"I, Robot\",\n            \"description\": \"A series of science fiction stories exploring artificial intelligence and ethics, famously introducing the Three Laws of Robotics.\",\n            \"is_paid\": 1,\n            \"is_favorite\": 0,\n            \"price\": 100,\n            \"author_id\": null,\n            \"section_id\": 5,\n            \"image\": \"storage/img/books/book21.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book21.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bnr/bnr10255-1.pdf\",\n            \"created_at\": \"2025-08-14T23:39:43.000000Z\"\n        },\n        {\n            \"id\": 20,\n            \"title\": \"Appointment with Death\",\n            \"description\": \"Hercule Poirot investigates a murder in Petra where a tyrannical matriarch’s death uncovers layers of family secrets and motives.\",\n            \"is_paid\": 1,\n            \"is_favorite\": 0,\n            \"price\": 145,\n            \"author_id\": 2,\n            \"section_id\": 2,\n            \"image\": \"storage/img/books/book20.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book20.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bnr/bnr6920-1.pdf\",\n            \"created_at\": \"2025-08-14T23:39:43.000000Z\"\n        },\n        {\n            \"id\": 3,\n            \"title\": \"The Spy\",\n            \"description\": \"A fictionalized account of Mata Hari, the infamous dancer turned spy during World War I. The novel explores her final days, revealing a woman misunderstood by history and condemned for her allure and independence.\",\n            \"is_paid\": 0,\n            \"is_favorite\": 0,\n            \"price\": null,\n            \"author_id\": 7,\n            \"section_id\": 2,\n            \"image\": \"storage/img/books/book3.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book3.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bnr/bnr2156-1.pdf\",\n            \"created_at\": \"2025-08-14T23:39:43.000000Z\"\n        }\n    ]\n}"
 				}
 			]
 		},

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Resources\BookResource;
+use App\Http\Resources\BookResourceDash;
 use App\Models\Author;
 use App\Models\Book;
 use App\Models\Section;
@@ -57,13 +58,13 @@ class BookController extends Controller
             'price'       => $request->price,
             'author_id'   => $request->author_id,
             'section_id'  => $request->section_id,
-            'image'       => asset('storage/' . $imagePath),
+            'image'       =>  'storage/'.$imagePath,
             'file_url'    => $request->file_url,
         ]);
 
         return response()->json([
             'message' => 'Book created successfully.',
-            'data'    => new BookResource($book),
+            'data'    => new BookResourceDash($book),
         ], 201);
     }
 
@@ -103,14 +104,14 @@ class BookController extends Controller
                 Storage::disk('public')->delete($book->image);
             }
             $imagePath = $request->file('image')->store('img/books', 'public');
-            $book->image = asset('storage/' . $imagePath);
+            $book->image ='storage/' . $imagePath;
         }
 
         $book->save();
 
         return response()->json([
             'message' => 'Book updated successfully.',
-            'data'    => new BookResource($book),
+            'data'    => new BookResourceDash($book),
         ]);
     }
 
@@ -143,7 +144,7 @@ class BookController extends Controller
 
         $books = Book::with(['author', 'section'])->get();
         return response()->json([
-            'data' => BookResource::collection($books),
+            'data' => BookResourceDash::collection($books),
         ]);
     }
 
@@ -159,7 +160,7 @@ class BookController extends Controller
             return response()->json(['message' => 'Book not found'], 404);
         }
 
-        return response()->json(['data' => new BookResource($book)]);
+        return response()->json(['data' => new BookResourceDash($book)]);
     }
 
 }

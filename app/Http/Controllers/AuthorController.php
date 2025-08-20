@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Resources\AuthorResource;
+use App\Http\Resources\AuthorResourceDash;
 use App\Http\Resources\BookResource;
 use App\Models\Author;
 use Illuminate\Http\Request;
@@ -52,12 +53,12 @@ class AuthorController extends Controller
         $author = Author::create([
             'name' => $request->name,
             'about' => $request->about,
-            'photo' =>asset('storage/'.$photoPath),
+            'photo' =>'storage/'.$photoPath,
         ]);
 
         return response()->json([
             'message' => 'Author created successfully.',
-            'data' => new AuthorResource($author),
+            'data' => new AuthorResourceDash($author),
         ], 201);
     }
 
@@ -88,7 +89,7 @@ class AuthorController extends Controller
                 Storage::disk('public')->delete($author->photo);
             }
             $photoPath = $request->file('photo')->store('img', 'public');
-            $author->photo = asset('storage/'.$photoPath);
+            $author->photo = 'storage/'.$photoPath;
         }
 
         if ($request->filled('name')) {
@@ -103,7 +104,7 @@ class AuthorController extends Controller
 
         return response()->json([
             'message' => 'Author updated successfully.',
-            'data' => new AuthorResource($author),
+            'data' => new AuthorResourceDash($author),
         ]);
     }
 
@@ -137,7 +138,7 @@ class AuthorController extends Controller
 
         $authors = Author::all();
         return response()->json([
-            'data' => AuthorResource::collection($authors)
+            'data' => AuthorResourceDash::collection($authors)
         ]);
     }
 
@@ -153,7 +154,7 @@ class AuthorController extends Controller
             return response()->json(['message' => 'Author not found'], 404);
         }
 
-        return response()->json(['data' => new AuthorResource($author)]);
+        return response()->json(['data' => new AuthorResourceDash($author)]);
     }
 
 }

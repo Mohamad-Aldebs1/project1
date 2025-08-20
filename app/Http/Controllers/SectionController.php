@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Resources\SectionResource;
+use App\Http\Resources\SectionResourceDash;
 use App\Models\Section;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -39,12 +40,12 @@ class SectionController extends Controller
 
         $section = Section::create([
             'name' => $request->name,
-            'image' =>asset('storage/'.$imagePath),
+            'image' =>'storage/'.$imagePath,
         ]);
 
         return response()->json([
             'message' => 'Section created successfully.',
-            'data' => new SectionResource($section),
+            'data' => new SectionResourceDash($section),
         ], 201);
     }
 
@@ -75,7 +76,7 @@ class SectionController extends Controller
                 Storage::disk('public')->delete($section->image);
             }
             $imagePath = $request->file('image')->store('img', 'public');
-            $section->image = asset('storage/'.$imagePath);
+            $section->image ='storage/'.$imagePath;
         }
 
         if ($request->filled('name')) {
@@ -86,7 +87,7 @@ class SectionController extends Controller
 
         return response()->json([
             'message' => 'Section updated successfully.',
-            'data' => new SectionResource($section),
+            'data' => new SectionResourceDash($section),
         ]);
     }
 
@@ -126,7 +127,7 @@ class SectionController extends Controller
         }
 
         return response()->json([
-            'data' => new SectionResource($section),
+            'data' => new SectionResourceDash($section),
         ]);
     }
 
@@ -140,7 +141,7 @@ class SectionController extends Controller
         $sections = Section::all();
 
         return response()->json([
-            'data' => SectionResource::collection($sections),
+            'data' => SectionResourceDash::collection($sections),
         ]);
     }
 

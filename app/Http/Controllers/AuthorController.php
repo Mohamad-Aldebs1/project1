@@ -41,7 +41,7 @@ class AuthorController extends Controller
         $validator = Validator::make($request->all(), [
             'name' => 'required|string|max:255',
             'about' => 'required|string',
-            'photo' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'photo' => 'required|image|mimes:jpeg,png,jpg,gif,svg',
         ]);
 
         if ($validator->fails()) {
@@ -77,7 +77,7 @@ class AuthorController extends Controller
         $validator = Validator::make($request->all(), [
             'name' => 'sometimes|required|string|max:255',
             'about' => 'sometimes|required|string',
-            'photo' => 'sometimes|required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'photo' => 'sometimes|required|image|mimes:jpeg,png,jpg,gif,svg',
         ]);
 
         if ($validator->fails()) {

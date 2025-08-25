@@ -41,8 +41,8 @@ class BookController extends Controller
             'price'       => 'nullable|numeric|gte:0',
             'author_id'   => 'nullable|exists:authors,id',
             'section_id'  => 'required|exists:sections,id',
-            'image'       => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'file_url'    => 'required|string|max:255',
+            'image'       => 'required|image|mimes:jpeg,png,jpg,gif,svg',
+            'file_url'    => 'required|string',
         ]);
 
         if ($validator->fails()) {
@@ -87,8 +87,8 @@ class BookController extends Controller
             'price'       => 'nullable|numeric|gte:0',
             'author_id'   => 'nullable|exists:authors,id',
             'section_id'  => 'sometimes|required|exists:sections,id',
-            'image'       => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'file_url'    => 'sometimes|string|max:255',
+            'image'       => 'nullable|image|mimes:jpeg,png,jpg,gif,svg',
+            'file_url'    => 'sometimes|string',
         ]);
 
         if ($validator->fails()) {

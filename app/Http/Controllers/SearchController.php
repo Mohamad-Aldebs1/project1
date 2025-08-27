@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\AuthorResource;
+use App\Http\Resources\BookResource;
+use App\Http\Resources\SectionResource;
 use App\Models\Author;
 use App\Models\Book;
 use App\Models\Section;
@@ -17,9 +20,9 @@ class SearchController extends Controller
         $section = Section::where('name', 'like', '%' . $query . '%')->get();
 
         return response()->json([
-            'books' => $books,
-            'authors' => $authors,
-            'section' => $section
+            'books' => BookResource::collection($books),
+            'authors' => AuthorResource::collection($authors),
+            'section' => SectionResource::collection($section)
         ]);
     }
 }

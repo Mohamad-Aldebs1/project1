@@ -3832,7 +3832,7 @@
 					}
 				],
 				"url": {
-					"raw": "localhost:8000/api/search?query=Sc",
+					"raw": "localhost:8000/api/search?query=A",
 					"host": [
 						"localhost"
 					],
@@ -3844,77 +3844,12 @@
 					"query": [
 						{
 							"key": "query",
-							"value": "Sc"
+							"value": "A"
 						}
 					]
 				}
 			},
 			"response": [
-				{
-					"name": "success",
-					"originalRequest": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "localhost:8000/api/search?query=Sc",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"api",
-								"search"
-							],
-							"query": [
-								{
-									"key": "query",
-									"value": "Sc"
-								}
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": null,
-					"header": [
-						{
-							"key": "Host",
-							"value": "localhost:8000"
-						},
-						{
-							"key": "Connection",
-							"value": "close"
-						},
-						{
-							"key": "X-Powered-By",
-							"value": "PHP/8.2.12"
-						},
-						{
-							"key": "Cache-Control",
-							"value": "no-cache, private"
-						},
-						{
-							"key": "Date",
-							"value": "Fri, 01 Aug 2025 18:27:37 GMT"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Access-Control-Allow-Origin",
-							"value": "*"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"books\": [\n        {\n            \"id\": 12,\n            \"title\": \"Outlaw Scribbles\",\n            \"image\": \"storage/img/books/book12.jpg\",\n            \"description\": \"A collection of socially charged thoughts and poetic reflections challenging conventional norms and provoking introspective dialogue.\",\n            \"is paid\": 1,\n            \"price\": 125,\n            \"author_id\": 1,\n            \"section_id\": 1,\n            \"file_url\": \"https://down.ketabpedia.com/files/bnr/bnr779-1.pdf\",\n            \"created_at\": \"2025-08-01T18:16:41.000000Z\",\n            \"updated_at\": \"2025-08-01T18:16:41.000000Z\"\n        }\n    ],\n    \"authors\": [],\n    \"section\": [\n        {\n            \"id\": 5,\n            \"name\": \"Science fiction\",\n            \"image\": \"storage/img/ScienceFiction.jpg\",\n            \"created_at\": \"2025-08-01T18:16:41.000000Z\",\n            \"updated_at\": \"2025-08-01T18:16:41.000000Z\"\n        },\n        {\n            \"id\": 6,\n            \"name\": \"Scientific\",\n            \"image\": \"storage/img/scientific.jpg\",\n            \"created_at\": \"2025-08-01T18:16:41.000000Z\",\n            \"updated_at\": \"2025-08-01T18:16:41.000000Z\"\n        }\n    ]\n}"
-				},
 				{
 					"name": "empty",
 					"originalRequest": {
@@ -3979,6 +3914,71 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"books\": [],\n    \"authors\": [],\n    \"section\": []\n}"
+				},
+				{
+					"name": "success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/search?query=A",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"search"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "A"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 27 Aug 2025 19:48:34 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"books\": [\n        {\n            \"id\": 1,\n            \"title\": \"So That My Heart May Find Peace\",\n            \"description\": \"A philosophical and emotional narrative where a man's journey leads him to spiritual insight through conversations with a stranger. The novel gently explores pain, doubt, and belief with poetic depth.\",\n            \"is_paid\": 0,\n            \"is_favorite\": 0,\n            \"price\": null,\n            \"author_id\": 1,\n            \"section_id\": 4,\n            \"image\": \"storage/img/books/book1.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book1.jpg\",\n            \"file_url\": \"https://archive.org/download/arabicnovels00045/Arabic-Novels-00045.pdf\",\n            \"created_at\": \"2025-08-20T17:54:41.000000Z\"\n        },\n        {\n            \"id\": 2,\n            \"title\": \"The Jasmine's Exile\",\n            \"description\": \"A young Tunisian woman moves to France for her studies and faces cultural alienation, religious prejudice, and identity conflict. The novel explores the emotional and social struggles of Muslim immigrants in Western societies.\",\n            \"is_paid\": 0,\n            \"is_favorite\": 0,\n            \"price\": null,\n            \"author_id\": 6,\n            \"section_id\": 1,\n            \"image\": \"storage/img/books/book2.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book2.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bm4u/0B3qzqlRcP02YUGptQkpDVVpBWWc.pdf\",\n            \"created_at\": \"2025-08-20T17:54:41.000000Z\"\n        },\n        {\n            \"id\": 6,\n            \"title\": \"Arsses\",\n            \"description\": \"A Saudi sci-fi adventure where a team of scientists investigates a mysterious object in the sky, only to discover a portal to another world. The novel blends space exploration, alien encounters, and psychological tension.\",\n            \"is_paid\": 0,\n            \"is_favorite\": 0,\n            \"price\": null,\n            \"author_id\": 3,\n            \"section_id\": 5,\n            \"image\": \"storage/img/books/book6.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book6.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/ind/arsis-dad.pdf\",\n            \"created_at\": \"2025-08-20T17:54:41.000000Z\"\n        },\n        {\n            \"id\": 7,\n            \"title\": \"Al-Sajil\",\n            \"description\": \"A fantasy thriller and the fourth part of the “Clay and Fire” saga, where secrets from the Barzakh threaten to reshape Earth’s history. The story follows Asif as he faces mysterious forces and a revelation that could alter fate itself.\",\n            \"is_paid\": 1,\n            \"is_favorite\": 0,\n            \"price\": 120,\n            \"author_id\": 3,\n            \"section_id\": 2,\n            \"image\": \"storage/img/books/book7.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book7.jpg\",\n            \"file_url\": \"https://ketabpedia.com/wp-content/uploads/2024/07/sejjil.pdf\",\n            \"created_at\": \"2025-08-20T17:54:41.000000Z\"\n        },\n        {\n            \"id\": 8,\n            \"title\": \"The Diary of a Writer\",\n            \"description\": \"A collection of essays and reflections where Dostoevsky explores political, religious, and social themes through personal commentary and philosophical depth\",\n            \"is_paid\": 0,\n            \"is_favorite\": 0,\n            \"price\": null,\n            \"author_id\": 5,\n            \"section_id\": 1,\n            \"image\": \"storage/img/books/book8.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book8.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bm4u/1TyeFh4kx8AARtibyfckZt-7gMKx8Tgwa.pdf\",\n            \"created_at\": \"2025-08-20T17:54:41.000000Z\"\n        },\n        {\n            \"id\": 10,\n            \"title\": \"Jasmine of Return\",\n            \"description\": \"A continuation of the jasmine-themed narrative, this novel explores identity, exile, and emotional return in the face of cultural and personal struggle.\",\n            \"is_paid\": 1,\n            \"is_favorite\": 0,\n            \"price\": 165,\n            \"author_id\": 6,\n            \"section_id\": 1,\n            \"image\": \"storage/img/books/book10.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book10.jpg\",\n            \"file_url\": \"https://book-shadow.com/files/fhrst11/571.pdf\",\n            \"created_at\": \"2025-08-20T17:54:41.000000Z\"\n        },\n        {\n            \"id\": 11,\n            \"title\": \"In My Heart Lives a Hebrew Woman\",\n            \"description\": \"Based on a true story, it follows a Jewish girl’s journey toward Islam and resistance in southern Lebanon, tackling themes of tolerance and belief.\",\n            \"is_paid\": 1,\n            \"is_favorite\": 0,\n            \"price\": 90,\n            \"author_id\": 6,\n            \"section_id\": 1,\n            \"image\": \"storage/img/books/book11.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book11.jpg\",\n            \"file_url\": \"https://ketabpedia.com/wp-content/uploads/2019/01/%D9%81%D9%8A-%D9%82%D9%84%D8%A8%D9%8A-%D8%A3%D9%86%D8%AB%D9%89-%D8%B9%D8%A8%D8%B1%D9%8A%D8%A9_%D8%AE%D9%88%D9%84%D8%A9-%D8%AD%D9%85%D8%AF%D9%8A.pdf\",\n            \"created_at\": \"2025-08-20T17:54:41.000000Z\"\n        },\n        {\n            \"id\": 12,\n            \"title\": \"Outlaw Scribbles\",\n            \"description\": \"A collection of socially charged thoughts and poetic reflections challenging conventional norms and provoking introspective dialogue.\",\n            \"is_paid\": 1,\n            \"is_favorite\": 0,\n            \"price\": 125,\n            \"author_id\": 1,\n            \"section_id\": 1,\n            \"image\": \"storage/img/books/book12.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book12.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bnr/bnr779-1.pdf\",\n            \"created_at\": \"2025-08-20T17:54:41.000000Z\"\n        },\n        {\n            \"id\": 13,\n            \"title\": \"Letters from the Qur’an\",\n            \"description\": \"Spiritual letters inspired by Qur’anic themes, offering heartfelt reflections on faith, humanity, and everyday struggles with lyrical sensitivity.\",\n            \"is_paid\": 1,\n            \"is_favorite\": 0,\n            \"price\": 140,\n            \"author_id\": 1,\n            \"section_id\": 4,\n            \"image\": \"storage/img/books/book13.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book13.jpg\",\n            \"file_url\": \"https://ketabpedia.com/wp-content/uploads/2024/07/rasaailquranadham.pdf\",\n            \"created_at\": \"2025-08-20T17:54:41.000000Z\"\n        },\n        {\n            \"id\": 16,\n            \"title\": \"Crime and Punishment\",\n            \"description\": \"A psychological masterpiece exploring guilt, redemption, and morality through the mind of a young man who commits murder in search of justice.\",\n            \"is_paid\": 1,\n            \"is_favorite\": 0,\n            \"price\": 185,\n            \"author_id\": 5,\n            \"section_id\": 2,\n            \"image\": \"storage/img/books/book16.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book16.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bm4u/1xQPFptXGxo5_H-uDxO_hwxOsoT-YiP8r.pdf\",\n            \"created_at\": \"2025-08-20T17:54:41.000000Z\"\n        },\n        {\n            \"id\": 17,\n            \"title\": \"The Gambler\",\n            \"description\": \"A semi-autobiographical novel centered on a man consumed by gambling addiction, personal pride, and a doomed romance.\",\n            \"is_paid\": 1,\n            \"is_favorite\": 0,\n            \"price\": 150,\n            \"author_id\": 5,\n            \"section_id\": 2,\n            \"image\": \"storage/img/books/book17.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book17.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bm4u/0ByC7-1_go92DTHhsSFJjS01LbnM.pdf\",\n            \"created_at\": \"2025-08-20T17:54:41.000000Z\"\n        },\n        {\n            \"id\": 19,\n            \"title\": \"The Pistachio Theory\",\n            \"description\": \"A popular Arabic self-development book that uses storytelling and metaphor to explore human behavior, decision-making, and mental clarity.\",\n            \"is_paid\": 1,\n            \"is_favorite\": 0,\n            \"price\": 210,\n            \"author_id\": null,\n            \"section_id\": 6,\n            \"image\": \"storage/img/books/book19.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book19.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bm4u/1bXu4mdq-WrQvd6soCWwgMYs-ZLQGwBkJ.pdf\",\n            \"created_at\": \"2025-08-20T17:54:41.000000Z\"\n        },\n        {\n            \"id\": 20,\n            \"title\": \"Appointment with Death\",\n            \"description\": \"Hercule Poirot investigates a murder in Petra where a tyrannical matriarch’s death uncovers layers of family secrets and motives.\",\n            \"is_paid\": 1,\n            \"is_favorite\": 0,\n            \"price\": 145,\n            \"author_id\": 2,\n            \"section_id\": 2,\n            \"image\": \"storage/img/books/book20.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/book20.jpg\",\n            \"file_url\": \"https://down.ketabpedia.com/files/bnr/bnr6920-1.pdf\",\n            \"created_at\": \"2025-08-20T17:54:41.000000Z\"\n        },\n        {\n            \"id\": 23,\n            \"title\": \"ITE extra\",\n            \"description\": \"ite books\",\n            \"is_paid\": 1,\n            \"is_favorite\": 0,\n            \"price\": 150,\n            \"author_id\": 1,\n            \"section_id\": 1,\n            \"image\": \"storage/img/books/KbLoRtA1ND4pCfHXDtgfzTe4vYjZHPfqqBE8YwV3.png\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/KbLoRtA1ND4pCfHXDtgfzTe4vYjZHPfqqBE8YwV3.png\",\n            \"file_url\": \"asssssss\",\n            \"created_at\": \"2025-08-20T17:59:34.000000Z\"\n        },\n        {\n            \"id\": 24,\n            \"title\": \"ITE extra\",\n            \"description\": \"ite books\",\n            \"is_paid\": 1,\n            \"is_favorite\": 0,\n            \"price\": 150,\n            \"author_id\": 1,\n            \"section_id\": 1,\n            \"image\": \"storage/img/books/thGQlPmykAsbjCwgv7P4asl97flAco1QnQ2ufAPT.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/books/thGQlPmykAsbjCwgv7P4asl97flAco1QnQ2ufAPT.jpg\",\n            \"file_url\": \"asssssss\",\n            \"created_at\": \"2025-08-25T18:46:37.000000Z\"\n        }\n    ],\n    \"authors\": [\n        {\n            \"id\": 1,\n            \"name\": \"Adham Sharkawi\",\n            \"about\": \"Adham Sharkawi is a Palestinian writer born in 1980 in Tyre, Lebanon. He holds a diploma in Physical Education and both a BA and MA in Arabic Literature from the Lebanese University in Beirut. He began his writing career on the online forum \\\"Al-Sakher\\\" and published his first book, Morning Talk, in 2012. He is known for his storytelling style and writes under the pseudonym Quss Ibn Sa‘idah. His works, such as Messages from the Qur’an and With the Prophet, are widely read across the Arab world, especially among youth\",\n            \"photo\": \"storage/img/AdhamSharkawi.jpg\",\n            \"photo_url\": \"http://localhost:8000/storage/img/AdhamSharkawi.jpg\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Agatha Christie\",\n            \"about\": \"Agatha Christie (1890–1976) was a British novelist and playwright, widely regarded as the Queen of Crime. She is best known for her 66 detective novels and 14 short story collections, featuring iconic characters like Hercule Poirot and Miss Marple. Her most famous works include Murder on the Orient Express, And Then There Were None, and The Murder of Roger Ackroyd.\\n                      Christie’s books have sold over two billion copies, making her the best-selling fiction writer of all time, surpassed only by the Bible and Shakespeare. She also wrote the world’s longest-running play, The Mousetrap, which debuted in 1952 and ran continuously in London’s West End for decades.\\n                      She served as a nurse and pharmacy assistant during World War I, which gave her deep knowledge of poisons—something she used cleverly in her plots. In 1971, she was honored as a Dame Commander of the British Empire for her contribution to literature.\",\n            \"photo\": \"storage/img/AgathaChristie.jpg\",\n            \"photo_url\": \"http://localhost:8000/storage/img/AgathaChristie.jpg\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Ahmed Al Hamdan\",\n            \"about\": \"Ahmed Al Hamdan is a Saudi novelist born on June 14, 1992, in Jeddah, Saudi Arabia. He holds a bachelors degree in mathematics from King Abdulaziz University. He began his literary career in 2017 with the novel The City of Love Is Not Inhabited by the Sane, which gained wide popularity for its emotional depth and unique storytelling.\\n                      He is known for blending romance, fantasy, and philosophical themes in his writing\",\n            \"photo\": \"storage/img/AhmedAlHamdan.jpg\",\n            \"photo_url\": \"http://localhost:8000/storage/img/AhmedAlHamdan.jpg\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Ahmed Al-Omari\",\n            \"about\": \"Ahmed Khairy Al-Omari is an Iraqi writer and dentist, born in Baghdad in 1970. Though trained in dentistry, he is best known for his influential Islamic writings that blend spiritual reflection with modern thought. His works often focus on cultural revival, personal development, and reinterpreting Islamic concepts in a contemporary context. Among his most popular books are The Quranic Compass, When the Prophet Speaks, Bilal’s Code, and the Chemistry of Prayer series. His writing style is known for being accessible, thought-provoking, and especially appealing to younger readers across the Arab world.\",\n            \"photo\": \"storage/img/AhmedAl-Omari.jpg\",\n            \"photo_url\": \"http://localhost:8000/storage/img/AhmedAl-Omari.jpg\"\n        },\n        {\n            \"id\": 6,\n            \"name\": \"Khawla Hamdi\",\n            \"about\": \"Khawla Hamdi is a Tunisian novelist and university professor, born on July 12, 1984, in Tunis. She holds a PhD in Operations Research from the University of Technology of Troyes in France. In addition to her academic career, she teaches Information Technology at King Saud University in Riyadh.\\n                       She is best known for her bestselling novel In My Heart a Hebrew Girl (Fi Qalbi Untha ‘Ibriah), which is inspired by a true story of a Jewish Tunisian girl who converts to Islam. Her novels often explore themes of identity, faith, cultural conflict, and the struggles of Muslims in Western societies. Other notable works include Ghurbat al-Yasmin (The Jasmine Exile), An Tabqa (To Stay), and Arni Andhur Ilayk (Let Me Look at You).\\n                       Her writing style blends emotional storytelling with social and spiritual reflection, making her a prominent voice in contemporary Arabic literature.\",\n            \"photo\": \"storage/img/KhawlaHamdi.jpg\",\n            \"photo_url\": \"http://localhost:8000/storage/img/KhawlaHamdi.jpg\"\n        },\n        {\n            \"id\": 7,\n            \"name\": \"Paulo Coelho\",\n            \"about\": \"Paulo Coelho is a Brazilian novelist and lyricist, born on August 24, 1947, in Rio de Janeiro. He is best known for his internationally acclaimed novel The Alchemist, which has sold over 150 million copies and has been translated into more than 80 languages. Before becoming a full-time writer, Coelho worked as a songwriter, theater director, and journalist.\\n                        His writing blends spirituality, philosophy, and personal growth, often using allegorical storytelling. Many of his novels explore themes like destiny, faith, and the pursuit of one’s dreams. Other notable works include Brida, Veronika Decides to Die, Eleven Minutes, The Zahir, and The Valkyries.\\n                        Coelho’s personal journey—from rebellion and institutionalization in his youth to spiritual awakening during a pilgrimage to Santiago de Compostela—deeply influences his literary voice. He is also a UN Messenger of Peace and a member of the Brazilian Academy of Letters.\",\n            \"photo\": \"storage/img/PauloCoelho.jpg\",\n            \"photo_url\": \"http://localhost:8000/storage/img/PauloCoelho.jpg\"\n        },\n        {\n            \"id\": 8,\n            \"name\": \"aaaaaaaa\",\n            \"about\": \"SA\",\n            \"photo\": \"storage/img/wxCECCyHGmfQcLpy7ansJMLkZRVZ8GxQXeJf45y4.jpg\",\n            \"photo_url\": \"http://localhost:8000/storage/img/wxCECCyHGmfQcLpy7ansJMLkZRVZ8GxQXeJf45y4.jpg\"\n        }\n    ],\n    \"section\": [\n        {\n            \"id\": 1,\n            \"name\": \"Cultural\",\n            \"image\": \"storage/img/cultural.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/cultural.jpg\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Philosophical\",\n            \"image\": \"storage/img/philosophical.jpg\",\n            \"image_url\": \"http://localhost:8000/storage/img/philosophical.jpg\"\n        }\n    ]\n}"
 				}
 			]
 		},
